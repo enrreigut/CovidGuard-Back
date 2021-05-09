@@ -17,7 +17,6 @@ def update_estadistica_tipo_uno(estadistica_actual, nueva_estadistica):
 
 
 def get_response(url):
-    url = "https://www.juntadeandalucia.es/institutodeestadisticaycartografia/intranet/admin/rest/v1.0/consulta/44088"
     res = requests.get(url)
 
     if res.status_code != 200:
