@@ -32,7 +32,7 @@ def create_estadisticas_tipo_uno():
     for provincia in estadisticas['data']:
         estadisticas_provincia = EstadisticasTipo1(
             fecha_creacion=timezone.now().date(),
-            lugar_de_residencia=provincia[0]['des'],
+            lugar_de_residencia=str(provincia[0]['des']).lower(),
             total_confirmados=int(float(provincia[1]['val'])),
             tasa_total_confirmados=float(provincia[2]['val']),
             confirmados_PDIA=int(float(provincia[3]['val'])),
