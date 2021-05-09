@@ -1,9 +1,4 @@
-from bs4 import BeautifulSoup
-import urllib.request
-from urllib.error import HTTPError
-from django.db import IntegrityError
 from .models import *
-from datetime import datetime
 from django.utils import timezone
 import requests
 
