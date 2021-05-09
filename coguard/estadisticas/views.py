@@ -3,8 +3,8 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from .models import *
 from .populate import *
-from  django.http import JsonResponse
-
+from django.http import JsonResponse
+import json
 
 # Create your views here.
 
@@ -28,6 +28,6 @@ class EstadisticasTipo1API(APIView):
 
 class WebhookEstadisticasTipo1API(APIView):
     def post(self, request):
-        list_dias_estadisitcas = [{'fecha': x.fecha_creacion, 'provincia': x.lugar_de_residencia} for x in EstadisticasTipo1.objects.all()]
+        list_dias_estadisitcas = [{'fecha': str(x.fecha_creacion), 'provincia': x.lugar_de_residencia} for x in EstadisticasTipo1.objects.all()]
 
-        return JsonResponse(list_dias_estadisitcas, "200")
+        return JsonResponse(list_dias_estadisitcas, safe=False)
