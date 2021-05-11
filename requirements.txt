@@ -3,4 +3,3 @@ gunicorn
 django-filter
 requests
 django-heroku
-dialogflow_fulfillment
