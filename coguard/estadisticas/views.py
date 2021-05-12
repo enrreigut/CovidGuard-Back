@@ -7,6 +7,7 @@ import json
 
 acciones = {
     'ESTADISTICAS GENERALES': 'getEstadisticasGenerales',
+    'ESTADISTICAS ESPECIFICAS': 'getEstadisticasEspecificas',
 }
 
 class PopulateEstadisticasTipo1(APIView):
@@ -30,7 +31,7 @@ class EstadisticasTipo1API(APIView):
 class WebhookEstadisticasTipo1API(APIView):
     def post(self, request):
 
-        res = None
+        res = {'fulfillmentText': "No te entendi"}
 
         try:
             body_unicode = request.body.decode('utf-8')
@@ -44,7 +45,10 @@ class WebhookEstadisticasTipo1API(APIView):
             return JsonResponse({'fulfillmentText': "Error al obtener la acción (" + e + ")"}, safe=False)
 
         # Estadisticas
+
         if action == acciones['ESTADISTICAS GENERALES']:
             res = prettyPrint(getEstadisticasGenerales(body))
+        elif action == acciones['ESTADISTICAS ESPECIFICAS']:
+            res = prettyPrint(getEstadisticasEspecificas(body))
 
         return JsonResponse(res, safe=False)
