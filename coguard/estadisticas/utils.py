@@ -34,8 +34,11 @@ def getEstadisticasGenerales(body):
 
     fecha = get_fecha(body)
 
+    if fecha['texto']:
+        res += fecha['texto']
+
     try:
-        informacion_deseada = EstadisticasTipo1.objects.get(fecha_creacion=fecha,
+        informacion_deseada = EstadisticasTipo1.objects.get(fecha_creacion=fecha['fecha'],
                                                             lugar_de_residencia=str(lugar_de_residencia).lower())
     except Exception as e:
         return JsonResponse({'fulfillmentText': str(e)}, safe=False)
