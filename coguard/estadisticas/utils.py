@@ -71,11 +71,9 @@ def getEstadisticasEspecificas(body):
 
     try:
         informacion_deseada = getattr(EstadisticasTipo1.objects.get(fecha_creacion=fecha['fecha'],
-                                                                    lugar_de_residencia=str(
-                                                                        lugar_de_residencia).lower()), columna)
+                                                                    lugar_de_residencia=str(lugar_de_residencia).lower()), columna)
     except Exception as e:
         return JsonResponse({'fulfillmentText': str(e)}, safe=False)
-
 
     res += "El atributo <b>'" + columna + "'</b> para <b>" + str(lugar_de_residencia) + "</b> el <b>" + \
           str(fecha['fecha']) + "</b>, es de <b>" + str(informacion_deseada) + "</b>\n"
@@ -94,7 +92,9 @@ def get_fecha(body):
     texto_adicional = None
 
     try:
-        fecha_body = datetime.datetime.strptime(body['queryResult']['parameters']['date'], "%Y-%m-%d'T'HH:mm:ss.SSS'Z'").date()
+        fecha_body = datetime.datetime.strptime(body['queryResult']['parameters']['date'], "%Y-%m-%dT%H:%M:%S%z").date()
+
+        print(fecha_body)
 
         fecha = fecha_body if len(EstadisticasTipo1.objects.filter(fecha_creacion=fecha_body)) > 0 else None
 
