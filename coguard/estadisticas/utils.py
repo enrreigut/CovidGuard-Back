@@ -94,7 +94,7 @@ def get_fecha(body):
     texto_adicional = None
 
     try:
-        fecha_body = datetime.datetime.strptime(body['queryResult']['parameters']['date'], '%Y-%m-%d').date()
+        fecha_body = datetime.datetime.strptime(body['queryResult']['parameters']['date'], "%Y-%m-%d'T'HH:mm:ss.SSS'Z'").date()
 
         fecha = fecha_body if len(EstadisticasTipo1.objects.filter(fecha_creacion=fecha_body)) > 0 else None
 
