@@ -1,14 +1,7 @@
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from .utils import *
-import json
 
-# Create your views here.
-
-acciones = {
-    'ESTADISTICAS GENERALES': 'getEstadisticasGenerales',
-    'ESTADISTICAS ESPECIFICAS': 'getEstadisticasEspecificas',
-}
 
 class PopulateEstadisticasTipo1(APIView):
     def get(self, request):
@@ -26,29 +19,3 @@ class EstadisticasTipo1API(APIView):
         list_dias_estadisitcas = [{'fecha': x.fecha_creacion, 'provincia': str(x.lugar_de_residencia).lower()} for x in EstadisticasTipo1.objects.all()]
 
         return Response(list_dias_estadisitcas, "200")
-
-
-class WebhookEstadisticasTipo1API(APIView):
-    def post(self, request):
-
-        res = {'fulfillmentText': "No te entendi"}
-
-        try:
-            body_unicode = request.body.decode('utf-8')
-            body = json.loads(body_unicode)
-        except Exception as e:
-            return JsonResponse({'fulfillmentText': "Error al parsear el cuerpo de la petición (" + e + ")"}, safe=False)
-
-        try:
-            action = body['queryResult']['action']
-        except Exception as e:
-            return JsonResponse({'fulfillmentText': "Error al obtener la acción (" + e + ")"}, safe=False)
-
-        # Estadisticas
-
-        if action == acciones['ESTADISTICAS GENERALES']:
-            res = prettyPrint(getEstadisticasGenerales(body))
-        elif action == acciones['ESTADISTICAS ESPECIFICAS']:
-            res = prettyPrint(getEstadisticasEspecificas(body))
-
-        return JsonResponse(res, safe=False)

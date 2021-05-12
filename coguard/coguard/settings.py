@@ -43,13 +43,15 @@ INSTALLED_APPS = [
     'rest_framework',
     'estadisticas',
     'medidas',
-    'vacunacion'
+    'vacunacion',
+    'webhook'
 ]
 
 MODULES = [
     'estadisticas',
     'medidas',
-    'vacunacion'
+    'vacunacion',
+    'webhook'
 ]
 
 MIDDLEWARE = [

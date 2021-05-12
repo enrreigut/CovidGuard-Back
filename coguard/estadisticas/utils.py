@@ -40,7 +40,7 @@ def getEstadisticasGenerales(body):
     except Exception as e:
         return JsonResponse({'fulfillmentText': str(e)}, safe=False)
 
-    res = "Las estadisticas para el lugar de residencia: <b>" + str(lugar_de_residencia) + "</b>, son: \n"
+    res += "Las estadisticas para el lugar de residencia: <b>" + str(lugar_de_residencia) + "</b>, son: \n"
     res += informacion_deseada.parse()
 
     return res
