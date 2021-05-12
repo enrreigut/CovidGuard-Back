@@ -52,7 +52,7 @@ def getEstadisticasEspecificas(body):
                             safe=False)
 
     try:
-        columna = body['queryResult']['parameters']['ColumnaEstadisticaTipo1']
+        columna = body['queryResult']['parameters']['EstadisticasTipo1']
     except Exception as e:
         return JsonResponse({'fulfillmentText': "Error al obtener el lugar de residencia + (" + str(e) + ")"},
                             safe=False)
