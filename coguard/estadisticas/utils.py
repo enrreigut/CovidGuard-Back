@@ -68,7 +68,6 @@ def getEstadisticasEspecificas(body):
     except Exception as e:
         return JsonResponse({'fulfillmentText': str(e)}, safe=False)
 
-    res = "El atributo <b>'" + columna + "'</b> para <b>" + str(
-        lugar_de_residencia) + "</b>, es de <b>" + informacion_deseada + "</b>: \n"
+    res = "El atributo <b>'" + columna + "'</b> para <b>" + str(lugar_de_residencia) + "</b>, es de <b>" + str(informacion_deseada) + "</b>: \n"
 
     return res
