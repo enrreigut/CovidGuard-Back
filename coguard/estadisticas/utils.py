@@ -90,7 +90,7 @@ def getFechasEstadisticas():
 
     res = "Las fechas con estadísticas son: \n"
     for fecha in fechas:
-        res += "> <b>" + fecha + "</b>\n"
+        res += "> <b>" + str(fecha['fecha_creacion']) + "</b>\n"
 
     return res
 

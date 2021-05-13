@@ -33,7 +33,7 @@ class WebhookEstadisticasTipo1API(APIView):
             res = prettyPrint(getEstadisticasGenerales(body))
         elif action == acciones['ESTADISTICAS ESPECIFICAS']:
             res = prettyPrint(getEstadisticasEspecificas(body))
-        elif action === acciones['ESTADISTICAS FECHAS']:
+        elif action == acciones['ESTADISTICAS FECHAS']:
             res = prettyPrint(getFechasEstadisticas())
 
         return JsonResponse(res, safe=False)
