@@ -1,12 +1,13 @@
 from rest_framework.views import APIView
 from django.http import JsonResponse
-from estadisticas.utils import getEstadisticasGenerales, getEstadisticasEspecificas, prettyPrint
+from estadisticas.utils import *
 import json
 
 
 acciones = {
     'ESTADISTICAS GENERALES': 'getEstadisticasGenerales',
     'ESTADISTICAS ESPECIFICAS': 'getEstadisticasEspecificas',
+    'ESTADISTICAS FECHAS': 'getEstadisticasFechas'
 }
 
 
@@ -32,5 +33,7 @@ class WebhookEstadisticasTipo1API(APIView):
             res = prettyPrint(getEstadisticasGenerales(body))
         elif action == acciones['ESTADISTICAS ESPECIFICAS']:
             res = prettyPrint(getEstadisticasEspecificas(body))
+        elif action === acciones['ESTADISTICAS FECHAS']:
+            res = prettyPrint(getFechasEstadisticas())
 
         return JsonResponse(res, safe=False)

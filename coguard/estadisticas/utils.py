@@ -84,6 +84,17 @@ def getEstadisticasEspecificas(body):
     return res
 
 
+def getFechasEstadisticas():
+
+    fechas = EstadisticasTipo1.objects.values('fecha_creacion').distinct()
+
+    res = "Las fechas con estadísticas son: \n"
+    for fecha in fechas:
+        res += "> <b>" + fecha + "</b>\n"
+
+    return res
+
+
 # Utilidades
 
 def nearest(items, pivot):
