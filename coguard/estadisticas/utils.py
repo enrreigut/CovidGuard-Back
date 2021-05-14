@@ -98,12 +98,11 @@ def getAyudas():
     res = "Esto son las cosas de las que te puedo dar información:\n"
 
     res += "<b>Estadísitcas:</b>\n"
-    res += "<t>Listado de provincias\n"
-
-    '''res += "<t>Listado de fechas\n"
-    res += "<t>Tipos de estadísticas\n"
-    res += "<t>Listado de estadísticas generales &ltprovincia&gt &ltfecha&gt\n"
-    res += "<t>Listado de estadísticas específicas &ltprovincia&gt &ltfecha&gt\n"'''
+    res += "\tListado de provincias\n"
+    res += "\tListado de fechas\n"
+    res += "\tTipos de estadísticas\n"
+    res += "\tListado de estadísticas generales &ltprovincia&gt &ltfecha&gt\n"
+    res += "\tListado de estadísticas específicas &ltprovincia&gt &ltfecha&gt\n"
 
     return res
 
