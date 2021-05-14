@@ -95,13 +95,13 @@ def getFechasEstadisticas():
 
 
 def getAyudas():
-    res = """Esto son las cosas de las que te puedo dar informacion:
-    <b>Estadísitcas:</b>
-    <t>Listado de provincias con estadísticas
-    <t>Listado de fechas con estadísticas
-    <t>Listado de estadísticas
-    <t>Listado de estadísticas generales &ltprovincia&gt &ltfecha&gt
-    <t>Listado de estadísticas específicas &ltprovincia&gt &ltfecha&gt"""
+    res = "Esto son las cosas de las que te puedo dar información:\n"
+    res += "<b>Estadísitcas:</b>\n"
+    res += "<t>Listado de provincias\n"
+    res += "<t>Listado de fechas\n"
+    res += "<t>Tipos de estadísticas\n"
+    res += "<t>Listado de estadísticas generales &ltprovincia&gt &ltfecha&gt\n"
+    res += "<t>Listado de estadísticas específicas &ltprovincia&gt &ltfecha&gt\n"
 
     return res
 
