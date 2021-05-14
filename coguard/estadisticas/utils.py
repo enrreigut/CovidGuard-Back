@@ -77,19 +77,19 @@ def getEstadisticasEspecificas(body):
     except Exception as e:
         return JsonResponse({'fulfillmentText': str(e)}, safe=False)
 
-    res += "El atributo <b>'" + columna + "'</b> para <b>" + str(lugar_de_residencia) + "</b> el <b>" + \
-          str(fecha['fecha']) + "</b>, es de <b>" + str(informacion_deseada) + "</b>\n"
+    res += "El atributo <b>'" + columna + "'</b> para <b>" + str(lugar_de_residencia) + "</b> el <b>" + str(fecha['fecha']) + "</b>, es de <b>" + str(informacion_deseada) + "</b>\n"
 
     return res
 
 
 def getFechasEstadisticas():
 
-    fechas = EstadisticasTipo1.objects.values_list('fecha_creacion').distinct()
+    fechas = EstadisticasTipo1.objects.values('fecha_creacion').distinct()
+
 
     res = "Las fechas con estadísticas son: \n"
     for fecha in fechas:
-        res += "> <b>" + str(fecha) + "</b>\n"
+        res += "> <b>" + str(fecha['fecha_creacion']) + "</b>\n"
 
     return res
 
@@ -97,11 +97,11 @@ def getFechasEstadisticas():
 def getAyudas():
     res = """Esto son las cosas de las que te puedo dar informacion:
     <b>Estadísitcas:</b>
-        Listado de provincias con estadísticas
-        Listado de fechas con estadísticas
-        Listado de estadísticas
-        Listado de estadísticas generales <provincia> <fecha>
-        Listado de estadísticas específicas <provincia> <fecha>"""
+    <t>Listado de provincias con estadísticas
+    <t>Listado de fechas con estadísticas
+    <t>Listado de estadísticas
+    <t>Listado de estadísticas generales &ltprovincia&gt &ltfecha&gt
+    <t>Listado de estadísticas específicas &ltprovincia&gt &ltfecha&gt"""
 
     return res
 
