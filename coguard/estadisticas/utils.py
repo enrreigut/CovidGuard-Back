@@ -13,8 +13,7 @@ def prettyPrint(msg):
                 }
             },
             "platform": "TELEGRAM"
-        }
-        ]
+        }]
     }
 
     return payload_data
@@ -86,14 +85,25 @@ def getEstadisticasEspecificas(body):
 
 def getFechasEstadisticas():
 
-    fechas = EstadisticasTipo1.objects.values('fecha_creacion').distinct()
+    fechas = EstadisticasTipo1.objects.values_list('fecha_creacion').distinct()
 
     res = "Las fechas con estadísticas son: \n"
     for fecha in fechas:
-        res += "> <b>" + str(fecha['fecha_creacion']) + "</b>\n"
+        res += "> <b>" + str(fecha) + "</b>\n"
 
     return res
 
+
+def getAyudas():
+    res = """Esto son las cosas de las que te puedo dar informacion:
+    <b>Estadísitcas:</b>
+        Listado de provincias con estadísticas
+        Listado de fechas con estadísticas
+        Listado de estadísticas
+        Listado de estadísticas generales <provincia> <fecha>
+        Listado de estadísticas específicas <provincia> <fecha>"""
+
+    return res
 
 # Utilidades
 
