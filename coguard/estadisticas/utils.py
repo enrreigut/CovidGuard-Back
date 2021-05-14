@@ -101,8 +101,8 @@ def getAyudas():
     res += "\tListado de provincias\n"
     res += "\tListado de fechas\n"
     res += "\tTipos de estadísticas\n"
-    res += "\tListado de estadísticas generales &ltprovincia&gt &ltfecha&gt\n"
-    res += "\tListado de estadísticas específicas &ltprovincia&gt &ltfecha&gt\n"
+    res += "\tListado de estadísticas generales &lt;provincia&gt; &lt;fecha&gt;\n"
+    res += "\tListado de estadísticas específicas &lt;provincia&gt; &lt;fecha&gt;\n"
 
     return res
 
