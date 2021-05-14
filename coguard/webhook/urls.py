@@ -4,4 +4,3 @@ from .views import *
 urlpatterns = [
     path("webhook/", WebhookEstadisticasTipo1API.as_view()),
 ]
-

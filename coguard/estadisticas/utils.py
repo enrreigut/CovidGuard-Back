@@ -86,7 +86,6 @@ def getFechasEstadisticas():
 
     fechas = EstadisticasTipo1.objects.values('fecha_creacion').distinct()
 
-
     res = "Las fechas con estadísticas son: \n"
     for fecha in fechas:
         res += "> <b>" + str(fecha['fecha_creacion']) + "</b>\n"
@@ -97,7 +96,7 @@ def getFechasEstadisticas():
 def getAyudas():
     res = "Esto son las cosas de las que te puedo dar información:\n"
 
-    res += "<b>Estadísitcas:</b>\n"
+    res += "<b>Estadísti cas:</b>\n"
     res += "\t * Listado de provincias\n"
     res += "\t * Listado de fechas\n"
     res += "\t * Tipos de estadísticas\n"
@@ -105,6 +104,18 @@ def getAyudas():
     res += "\t * Listado de estadísticas específicas &lt;provincia&gt; &lt;fecha&gt;\n"
 
     return res
+
+
+def getTipoEstadisticas():
+
+    fields = EstadisticasTipo1._meta.get_fields()
+    res = "Los <b>tipos de estadísticas</b> registrados son:\n"
+    for field in fields:
+        if field.name != "id":
+            res += "> <b>" + str(field.name) + "</b>\n"
+
+    return res
+
 
 # Utilidades
 

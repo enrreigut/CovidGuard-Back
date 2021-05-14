@@ -5,8 +5,9 @@ import json
 
 
 acciones = {
-    'ESTADISTICAS AYUDAS': 'getAyudas',
+    'AYUDAS': 'getAyudas',
     'ESTADISTICAS FECHAS': 'getEstadisticasFechas',
+    'ESTADISTICAS TIPOS': 'getTiposEstadisticas',
     'ESTADISTICAS GENERALES': 'getEstadisticasGenerales',
     'ESTADISTICAS ESPECIFICAS': 'getEstadisticasEspecificas'
 }
@@ -30,10 +31,12 @@ class WebhookEstadisticasTipo1API(APIView):
 
         # Estadisticas
 
-        if action == acciones['ESTADISTICAS AYUDAS']:
+        if action == acciones['AYUDAS']:
             res = prettyPrint(getAyudas())
         elif action == acciones['ESTADISTICAS FECHAS']:
             res = prettyPrint(getFechasEstadisticas())
+        elif action == acciones['ESTADISTICAS TIPOS']:
+            res = prettyPrint(getTipoEstadisticas())
         elif action == acciones['ESTADISTICAS GENERALES']:
             res = prettyPrint(getEstadisticasGenerales(body))
         elif action == acciones['ESTADISTICAS ESPECIFICAS']:
