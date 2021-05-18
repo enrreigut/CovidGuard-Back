@@ -1,0 +1,1632 @@
+[
+  {
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+      "name": "Can add log entry",
+      "content_type": 1,
+      "codename": "add_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+      "name": "Can change log entry",
+      "content_type": 1,
+      "codename": "change_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+      "name": "Can delete log entry",
+      "content_type": 1,
+      "codename": "delete_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+      "name": "Can view log entry",
+      "content_type": 1,
+      "codename": "view_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+      "name": "Can add permission",
+      "content_type": 2,
+      "codename": "add_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+      "name": "Can change permission",
+      "content_type": 2,
+      "codename": "change_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+      "name": "Can delete permission",
+      "content_type": 2,
+      "codename": "delete_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+      "name": "Can view permission",
+      "content_type": 2,
+      "codename": "view_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+      "name": "Can add group",
+      "content_type": 3,
+      "codename": "add_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+      "name": "Can change group",
+      "content_type": 3,
+      "codename": "change_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+      "name": "Can delete group",
+      "content_type": 3,
+      "codename": "delete_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+      "name": "Can view group",
+      "content_type": 3,
+      "codename": "view_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+      "name": "Can add user",
+      "content_type": 4,
+      "codename": "add_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+      "name": "Can change user",
+      "content_type": 4,
+      "codename": "change_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+      "name": "Can delete user",
+      "content_type": 4,
+      "codename": "delete_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+      "name": "Can view user",
+      "content_type": 4,
+      "codename": "view_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+      "name": "Can add content type",
+      "content_type": 5,
+      "codename": "add_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+      "name": "Can change content type",
+      "content_type": 5,
+      "codename": "change_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+      "name": "Can delete content type",
+      "content_type": 5,
+      "codename": "delete_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+      "name": "Can view content type",
+      "content_type": 5,
+      "codename": "view_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+      "name": "Can add session",
+      "content_type": 6,
+      "codename": "add_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+      "name": "Can change session",
+      "content_type": 6,
+      "codename": "change_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+      "name": "Can delete session",
+      "content_type": 6,
+      "codename": "delete_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+      "name": "Can view session",
+      "content_type": 6,
+      "codename": "view_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+      "name": "Can add estadisticas tipo1",
+      "content_type": 7,
+      "codename": "add_estadisticastipo1"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+      "name": "Can change estadisticas tipo1",
+      "content_type": 7,
+      "codename": "change_estadisticastipo1"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+      "name": "Can delete estadisticas tipo1",
+      "content_type": 7,
+      "codename": "delete_estadisticastipo1"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+      "name": "Can view estadisticas tipo1",
+      "content_type": 7,
+      "codename": "view_estadisticastipo1"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$7CqngkfVX2DODuIJ0yel6C$XwTktfrlj2aUm74S+L1ubizYhf0xGkKlCXcQaDri0Zw=",
+      "last_login": "2021-05-12T19:32:37.327Z",
+      "is_superuser": true,
+      "username": "admin",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2021-05-12T19:32:28.773Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+      "app_label": "admin",
+      "model": "logentry"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+      "app_label": "auth",
+      "model": "permission"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+      "app_label": "auth",
+      "model": "group"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+      "app_label": "auth",
+      "model": "user"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+      "app_label": "contenttypes",
+      "model": "contenttype"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+      "app_label": "sessions",
+      "model": "session"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+      "app_label": "estadisticas",
+      "model": "estadisticastipo1"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "ktgky0qbk5wwzizukcym918gh4g2n4bc",
+    "fields": {
+      "session_data": ".eJxVjDsOwyAQBe9CHSFgjRdSpvcZEJ8lOIlAMnYV5e6xJRdJ-2bmvZnz21rc1mlxc2JXJtnldws-PqkeID18vTceW12XOfBD4SftfGqJXrfT_Tsovpe9FlYRKgBQwQaRjRh1HAMMEAVqkKiVRcwDJp0F7SQhiizBJEKgYCT7fAGvUjbr:1lguaz:NF9vkSXwZAwFlGtr2Cb8cNBPXsYTsDnyWuxdZXY2Nu8",
+      "expire_date": "2021-05-26T19:32:37.333Z"
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 1,
+    "fields": {
+      "fecha_creacion": "2021-05-09",
+      "lugar_de_residencia": "andalucía",
+      "total_confirmados": 562475,
+      "tasa_total_confirmados": 6645.175901784542,
+      "confirmados_PDIA": 557101,
+      "tasa_PDIA": 6581.686546175511,
+      "confirmados_PDIA_14": 16253,
+      "tasa_PDIA_14": 192.0157232440627,
+      "confirmados_PDIA_7": 6653,
+      "tasa_PDIA_7": 78.59968047392783,
+      "curados": 495664,
+      "fallecidos": 9817
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 2,
+    "fields": {
+      "fecha_creacion": "2021-05-09",
+      "lugar_de_residencia": "almería",
+      "total_confirmados": 53642,
+      "tasa_total_confirmados": 7368.963314536126,
+      "confirmados_PDIA": 53335,
+      "tasa_PDIA": 7326.789798679844,
+      "confirmados_PDIA_14": 1152,
+      "tasa_PDIA_14": 158.2537142229152,
+      "confirmados_PDIA_7": 405,
+      "tasa_PDIA_7": 55.63607140649362,
+      "curados": 49017,
+      "fallecidos": 817
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 3,
+    "fields": {
+      "fecha_creacion": "2021-05-09",
+      "lugar_de_residencia": "cádiz",
+      "total_confirmados": 79291,
+      "tasa_total_confirmados": 6373.623546982473,
+      "confirmados_PDIA": 78910,
+      "tasa_PDIA": 6342.9977436580075,
+      "confirmados_PDIA_14": 1298,
+      "tasa_PDIA_14": 104.3367262865048,
+      "confirmados_PDIA_7": 441,
+      "tasa_PDIA_7": 35.44876447792652,
+      "curados": 72226,
+      "fallecidos": 1457
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 4,
+    "fields": {
+      "fecha_creacion": "2021-05-09",
+      "lugar_de_residencia": "córdoba",
+      "total_confirmados": 50709,
+      "tasa_total_confirmados": 6459.0047000980785,
+      "confirmados_PDIA": 50260,
+      "tasa_PDIA": 6401.813804786713,
+      "confirmados_PDIA_14": 1343,
+      "tasa_PDIA_14": 171.06319020749214,
+      "confirmados_PDIA_7": 568,
+      "tasa_PDIA_7": 72.34839317785222,
+      "curados": 44635,
+      "fallecidos": 941
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 5,
+    "fields": {
+      "fecha_creacion": "2021-05-09",
+      "lugar_de_residencia": "granada",
+      "total_confirmados": 84112,
+      "tasa_total_confirmados": 9150.884277955716,
+      "confirmados_PDIA": 83278,
+      "tasa_PDIA": 9060.15004873973,
+      "confirmados_PDIA_14": 3335,
+      "tasa_PDIA_14": 362.8281228241192,
+      "confirmados_PDIA_7": 1390,
+      "tasa_PDIA_7": 151.22371535997772,
+      "curados": 70295,
+      "fallecidos": 1700
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 6,
+    "fields": {
+      "fecha_creacion": "2021-05-09",
+      "lugar_de_residencia": "huelva",
+      "total_confirmados": 28854,
+      "tasa_total_confirmados": 5622.698131223571,
+      "confirmados_PDIA": 28679,
+      "tasa_PDIA": 5588.596371572773,
+      "confirmados_PDIA_14": 1085,
+      "tasa_PDIA_14": 211.43090983494747,
+      "confirmados_PDIA_7": 440,
+      "tasa_PDIA_7": 85.74156712200634,
+      "curados": 24680,
+      "fallecidos": 365
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 7,
+    "fields": {
+      "fecha_creacion": "2021-05-09",
+      "lugar_de_residencia": "jaén",
+      "total_confirmados": 47280,
+      "tasa_total_confirmados": 7488.346972747041,
+      "confirmados_PDIA": 46731,
+      "tasa_PDIA": 7401.394720461972,
+      "confirmados_PDIA_14": 1403,
+      "tasa_PDIA_14": 222.21131139517976,
+      "confirmados_PDIA_7": 607,
+      "tasa_PDIA_7": 96.13846473048761,
+      "curados": 41488,
+      "fallecidos": 964
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 8,
+    "fields": {
+      "fecha_creacion": "2021-05-09",
+      "lugar_de_residencia": "málaga",
+      "total_confirmados": 97517,
+      "tasa_total_confirmados": 5784.200911075259,
+      "confirmados_PDIA": 95651,
+      "tasa_PDIA": 5673.519502704755,
+      "confirmados_PDIA_14": 2194,
+      "tasa_PDIA_14": 130.13666128879188,
+      "confirmados_PDIA_7": 1014,
+      "tasa_PDIA_7": 60.14520261934137,
+      "curados": 89061,
+      "fallecidos": 1629
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 9,
+    "fields": {
+      "fecha_creacion": "2021-05-09",
+      "lugar_de_residencia": "sevilla",
+      "total_confirmados": 121070,
+      "tasa_total_confirmados": 6184.3358083617,
+      "confirmados_PDIA": 120257,
+      "tasa_PDIA": 6142.807229752647,
+      "confirmados_PDIA_14": 4443,
+      "tasa_PDIA_14": 226.95138346866304,
+      "confirmados_PDIA_7": 1788,
+      "tasa_PDIA_7": 91.33222454241943,
+      "curados": 104262,
+      "fallecidos": 1944
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 10,
+    "fields": {
+      "fecha_creacion": "2021-05-10",
+      "lugar_de_residencia": "andalucía",
+      "total_confirmados": 565130,
+      "tasa_total_confirmados": 6676.542526113158,
+      "confirmados_PDIA": 559753,
+      "tasa_PDIA": 6613.017727990761,
+      "confirmados_PDIA_14": 15312,
+      "tasa_PDIA_14": 180.89858821836512,
+      "confirmados_PDIA_7": 6580,
+      "tasa_PDIA_7": 77.73724598202993,
+      "curados": 504063,
+      "fallecidos": 9829
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 11,
+    "fields": {
+      "fecha_creacion": "2021-05-10",
+      "lugar_de_residencia": "almería",
+      "total_confirmados": 53843,
+      "tasa_total_confirmados": 7396.575290715644,
+      "confirmados_PDIA": 53536,
+      "tasa_PDIA": 7354.401774859365,
+      "confirmados_PDIA_14": 1026,
+      "tasa_PDIA_14": 140.94471422978384,
+      "confirmados_PDIA_7": 432,
+      "tasa_PDIA_7": 59.3451428335932,
+      "curados": 49582,
+      "fallecidos": 817
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 12,
+    "fields": {
+      "fecha_creacion": "2021-05-10",
+      "lugar_de_residencia": "cádiz",
+      "total_confirmados": 79501,
+      "tasa_total_confirmados": 6390.503911019582,
+      "confirmados_PDIA": 79120,
+      "tasa_PDIA": 6359.8781076951145,
+      "confirmados_PDIA_14": 1164,
+      "tasa_PDIA_14": 93.56544637711215,
+      "confirmados_PDIA_7": 428,
+      "tasa_PDIA_7": 34.40378956134364,
+      "curados": 73255,
+      "fallecidos": 1458
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 13,
+    "fields": {
+      "fecha_creacion": "2021-05-10",
+      "lugar_de_residencia": "córdoba",
+      "total_confirmados": 50903,
+      "tasa_total_confirmados": 6483.715242838401,
+      "confirmados_PDIA": 50454,
+      "tasa_PDIA": 6426.524347527035,
+      "confirmados_PDIA_14": 1178,
+      "tasa_PDIA_14": 150.04649148505266,
+      "confirmados_PDIA_7": 486,
+      "tasa_PDIA_7": 61.90373078245806,
+      "curados": 45481,
+      "fallecidos": 942
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 14,
+    "fields": {
+      "fecha_creacion": "2021-05-10",
+      "lugar_de_residencia": "granada",
+      "total_confirmados": 84616,
+      "tasa_total_confirmados": 9205.716474028686,
+      "confirmados_PDIA": 83782,
+      "tasa_PDIA": 9114.9822448127,
+      "confirmados_PDIA_14": 3214,
+      "tasa_PDIA_14": 349.66404400501324,
+      "confirmados_PDIA_7": 1335,
+      "tasa_PDIA_7": 145.240043169475,
+      "curados": 72116,
+      "fallecidos": 1704
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 15,
+    "fields": {
+      "fecha_creacion": "2021-05-10",
+      "lugar_de_residencia": "huelva",
+      "total_confirmados": 29016,
+      "tasa_total_confirmados": 5654.26661730031,
+      "confirmados_PDIA": 28840,
+      "tasa_PDIA": 5619.969990451507,
+      "confirmados_PDIA_14": 1039,
+      "tasa_PDIA_14": 202.4670187267377,
+      "confirmados_PDIA_7": 462,
+      "tasa_PDIA_7": 90.02864547810667,
+      "curados": 25224,
+      "fallecidos": 365
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 16,
+    "fields": {
+      "fecha_creacion": "2021-05-10",
+      "lugar_de_residencia": "jaén",
+      "total_confirmados": 47546,
+      "tasa_total_confirmados": 7530.476843617404,
+      "confirmados_PDIA": 46996,
+      "tasa_PDIA": 7443.366208359137,
+      "confirmados_PDIA_14": 1410,
+      "tasa_PDIA_14": 223.31999220755773,
+      "confirmados_PDIA_7": 616,
+      "tasa_PDIA_7": 97.56391148925925,
+      "curados": 42329,
+      "fallecidos": 966
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 17,
+    "fields": {
+      "fecha_creacion": "2021-05-10",
+      "lugar_de_residencia": "málaga",
+      "total_confirmados": 97873,
+      "tasa_total_confirmados": 5805.316978267059,
+      "confirmados_PDIA": 96007,
+      "tasa_PDIA": 5694.635569896555,
+      "confirmados_PDIA_14": 2199,
+      "tasa_PDIA_14": 130.4332352662048,
+      "confirmados_PDIA_7": 1028,
+      "tasa_PDIA_7": 60.97560975609756,
+      "curados": 89912,
+      "fallecidos": 1632
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 18,
+    "fields": {
+      "fecha_creacion": "2021-05-10",
+      "lugar_de_residencia": "sevilla",
+      "total_confirmados": 121832,
+      "tasa_total_confirmados": 6223.259273183469,
+      "confirmados_PDIA": 121018,
+      "tasa_PDIA": 6181.679613911921,
+      "confirmados_PDIA_14": 4082,
+      "tasa_PDIA_14": 208.51126430769355,
+      "confirmados_PDIA_7": 1793,
+      "tasa_PDIA_7": 91.58762785489823,
+      "curados": 106164,
+      "fallecidos": 1945
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 19,
+    "fields": {
+      "fecha_creacion": "2021-05-11",
+      "lugar_de_residencia": "andalucía",
+      "total_confirmados": 566188,
+      "tasa_total_confirmados": 6689.041919160116,
+      "confirmados_PDIA": 560814,
+      "tasa_PDIA": 6625.552563551085,
+      "confirmados_PDIA_14": 15113,
+      "tasa_PDIA_14": 178.54756816510917,
+      "confirmados_PDIA_7": 6630,
+      "tasa_PDIA_7": 78.32795453812439,
+      "curados": 507082,
+      "fallecidos": 9883
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 20,
+    "fields": {
+      "fecha_creacion": "2021-05-11",
+      "lugar_de_residencia": "almería",
+      "total_confirmados": 53913,
+      "tasa_total_confirmados": 7406.19140182294,
+      "confirmados_PDIA": 53606,
+      "tasa_PDIA": 7364.01788596666,
+      "confirmados_PDIA_14": 1018,
+      "tasa_PDIA_14": 139.8457301032358,
+      "confirmados_PDIA_7": 447,
+      "tasa_PDIA_7": 61.40573807087074,
+      "curados": 49749,
+      "fallecidos": 819
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 21,
+    "fields": {
+      "fecha_creacion": "2021-05-11",
+      "lugar_de_residencia": "cádiz",
+      "total_confirmados": 79599,
+      "tasa_total_confirmados": 6398.381414236899,
+      "confirmados_PDIA": 79218,
+      "tasa_PDIA": 6367.755610912432,
+      "confirmados_PDIA_14": 1172,
+      "tasa_PDIA_14": 94.20850786424008,
+      "confirmados_PDIA_7": 446,
+      "tasa_PDIA_7": 35.85067790738146,
+      "curados": 73537,
+      "fallecidos": 1463
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 22,
+    "fields": {
+      "fecha_creacion": "2021-05-11",
+      "lugar_de_residencia": "córdoba",
+      "total_confirmados": 50977,
+      "tasa_total_confirmados": 6493.140913780586,
+      "confirmados_PDIA": 50528,
+      "tasa_PDIA": 6435.950018469221,
+      "confirmados_PDIA_14": 1177,
+      "tasa_PDIA_14": 149.91911755340152,
+      "confirmados_PDIA_7": 495,
+      "tasa_PDIA_7": 63.0500961673184,
+      "curados": 45729,
+      "fallecidos": 946
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 23,
+    "fields": {
+      "fecha_creacion": "2021-05-11",
+      "lugar_de_residencia": "granada",
+      "total_confirmados": 84749,
+      "tasa_total_confirmados": 9220.18608132572,
+      "confirmados_PDIA": 83916,
+      "tasa_PDIA": 9129.56064614956,
+      "confirmados_PDIA_14": 3062,
+      "tasa_PDIA_14": 333.12734995126027,
+      "confirmados_PDIA_7": 1215,
+      "tasa_PDIA_7": 132.18475839019635,
+      "curados": 72748,
+      "fallecidos": 1721
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 24,
+    "fields": {
+      "fecha_creacion": "2021-05-11",
+      "lugar_de_residencia": "huelva",
+      "total_confirmados": 29092,
+      "tasa_total_confirmados": 5669.076524348656,
+      "confirmados_PDIA": 28916,
+      "tasa_PDIA": 5634.779897499854,
+      "confirmados_PDIA_14": 1009,
+      "tasa_PDIA_14": 196.62100278660094,
+      "confirmados_PDIA_7": 463,
+      "tasa_PDIA_7": 90.22351267611123,
+      "curados": 25440,
+      "fallecidos": 369
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 25,
+    "fields": {
+      "fecha_creacion": "2021-05-11",
+      "lugar_de_residencia": "jaén",
+      "total_confirmados": 47623,
+      "tasa_total_confirmados": 7542.672332553561,
+      "confirmados_PDIA": 47073,
+      "tasa_PDIA": 7455.561697295295,
+      "confirmados_PDIA_14": 1383,
+      "tasa_PDIA_14": 219.04365193124278,
+      "confirmados_PDIA_7": 629,
+      "tasa_PDIA_7": 99.6228901408183,
+      "curados": 42589,
+      "fallecidos": 971
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 26,
+    "fields": {
+      "fecha_creacion": "2021-05-11",
+      "lugar_de_residencia": "málaga",
+      "total_confirmados": 98065,
+      "tasa_total_confirmados": 5816.705418999715,
+      "confirmados_PDIA": 96200,
+      "tasa_PDIA": 5706.0833254246945,
+      "confirmados_PDIA_14": 2215,
+      "tasa_PDIA_14": 131.38227199392617,
+      "confirmados_PDIA_7": 1038,
+      "tasa_PDIA_7": 61.568757710923414,
+      "curados": 90227,
+      "fallecidos": 1636
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 27,
+    "fields": {
+      "fecha_creacion": "2021-05-11",
+      "lugar_de_residencia": "sevilla",
+      "total_confirmados": 122170,
+      "tasa_total_confirmados": 6240.524537107037,
+      "confirmados_PDIA": 121357,
+      "tasa_PDIA": 6198.995958497983,
+      "confirmados_PDIA_14": 4077,
+      "tasa_PDIA_14": 208.2558609952148,
+      "confirmados_PDIA_7": 1897,
+      "tasa_PDIA_7": 96.9000167544573,
+      "curados": 107063,
+      "fallecidos": 1958
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 28,
+    "fields": {
+      "fecha_creacion": "2021-05-12",
+      "lugar_de_residencia": "andalucía",
+      "total_confirmados": 567482,
+      "tasa_total_confirmados": 6704.329456591841,
+      "confirmados_PDIA": 562108,
+      "tasa_PDIA": 6640.8401009828085,
+      "confirmados_PDIA_14": 14818,
+      "tasa_PDIA_14": 175.0623876841519,
+      "confirmados_PDIA_7": 6455,
+      "tasa_PDIA_7": 76.26047459179381,
+      "curados": 509930,
+      "fallecidos": 9902
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 29,
+    "fields": {
+      "fecha_creacion": "2021-05-12",
+      "lugar_de_residencia": "almería",
+      "total_confirmados": 53960,
+      "tasa_total_confirmados": 7412.647933566409,
+      "confirmados_PDIA": 53653,
+      "tasa_PDIA": 7370.474417710129,
+      "confirmados_PDIA_14": 952,
+      "tasa_PDIA_14": 130.77911105921464,
+      "confirmados_PDIA_7": 399,
+      "tasa_PDIA_7": 54.8118333115826,
+      "curados": 49974,
+      "fallecidos": 822
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 30,
+    "fields": {
+      "fecha_creacion": "2021-05-12",
+      "lugar_de_residencia": "cádiz",
+      "total_confirmados": 79712,
+      "tasa_total_confirmados": 6407.464657742581,
+      "confirmados_PDIA": 79331,
+      "tasa_PDIA": 6376.838854418114,
+      "confirmados_PDIA_14": 1109,
+      "tasa_PDIA_14": 89.14439865310771,
+      "confirmados_PDIA_7": 467,
+      "tasa_PDIA_7": 37.53871431109225,
+      "curados": 73866,
+      "fallecidos": 1466
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 31,
+    "fields": {
+      "fecha_creacion": "2021-05-12",
+      "lugar_de_residencia": "córdoba",
+      "total_confirmados": 51065,
+      "tasa_total_confirmados": 6504.349819765886,
+      "confirmados_PDIA": 50616,
+      "tasa_PDIA": 6447.158924454521,
+      "confirmados_PDIA_14": 1119,
+      "tasa_PDIA_14": 142.53142951763493,
+      "confirmados_PDIA_7": 485,
+      "tasa_PDIA_7": 61.776356850806906,
+      "curados": 45951,
+      "fallecidos": 946
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 32,
+    "fields": {
+      "fecha_creacion": "2021-05-12",
+      "lugar_de_residencia": "granada",
+      "total_confirmados": 84978,
+      "tasa_total_confirmados": 9245.099916446177,
+      "confirmados_PDIA": 84145,
+      "tasa_PDIA": 9154.474481270017,
+      "confirmados_PDIA_14": 2931,
+      "tasa_PDIA_14": 318.87533073388107,
+      "confirmados_PDIA_7": 1100,
+      "tasa_PDIA_7": 119.67344381005431,
+      "curados": 73240,
+      "fallecidos": 1729
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 33,
+    "fields": {
+      "fecha_creacion": "2021-05-12",
+      "lugar_de_residencia": "huelva",
+      "total_confirmados": 29193,
+      "tasa_total_confirmados": 5688.758111347117,
+      "confirmados_PDIA": 29017,
+      "tasa_PDIA": 5654.461484498314,
+      "confirmados_PDIA_14": 1002,
+      "tasa_PDIA_14": 195.256932400569,
+      "confirmados_PDIA_7": 484,
+      "tasa_PDIA_7": 94.31572383420698,
+      "curados": 25632,
+      "fallecidos": 369
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 34,
+    "fields": {
+      "fecha_creacion": "2021-05-12",
+      "lugar_de_residencia": "jaén",
+      "total_confirmados": 47734,
+      "tasa_total_confirmados": 7560.252842578412,
+      "confirmados_PDIA": 47184,
+      "tasa_PDIA": 7473.142207320144,
+      "confirmados_PDIA_14": 1338,
+      "tasa_PDIA_14": 211.91641813738454,
+      "confirmados_PDIA_7": 642,
+      "tasa_PDIA_7": 101.68186879237733,
+      "curados": 42873,
+      "fallecidos": 971
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 35,
+    "fields": {
+      "fecha_creacion": "2021-05-12",
+      "lugar_de_residencia": "málaga",
+      "total_confirmados": 98260,
+      "tasa_total_confirmados": 5828.27180411882,
+      "confirmados_PDIA": 96395,
+      "tasa_PDIA": 5717.6497105437975,
+      "confirmados_PDIA_14": 2205,
+      "tasa_PDIA_14": 130.78912403910033,
+      "confirmados_PDIA_7": 996,
+      "tasa_PDIA_7": 59.07753630065483,
+      "curados": 90558,
+      "fallecidos": 1636
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 36,
+    "fields": {
+      "fecha_creacion": "2021-05-12",
+      "lugar_de_residencia": "sevilla",
+      "total_confirmados": 122580,
+      "tasa_total_confirmados": 6261.467608730298,
+      "confirmados_PDIA": 121767,
+      "tasa_PDIA": 6219.939030121245,
+      "confirmados_PDIA_14": 4162,
+      "tasa_PDIA_14": 212.5977173073544,
+      "confirmados_PDIA_7": 1882,
+      "tasa_PDIA_7": 96.1338068170209,
+      "curados": 107836,
+      "fallecidos": 1963
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 37,
+    "fields": {
+      "fecha_creacion": "2021-05-13",
+      "lugar_de_residencia": "andalucía",
+      "total_confirmados": 568789,
+      "tasa_total_confirmados": 6719.770578248149,
+      "confirmados_PDIA": 563414,
+      "tasa_PDIA": 6656.269408467996,
+      "confirmados_PDIA_14": 14517,
+      "tasa_PDIA_14": 171.5063221764633,
+      "confirmados_PDIA_7": 6301,
+      "tasa_PDIA_7": 74.4410922390229,
+      "curados": 512837,
+      "fallecidos": 9911
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 38,
+    "fields": {
+      "fecha_creacion": "2021-05-13",
+      "lugar_de_residencia": "almería",
+      "total_confirmados": 54018,
+      "tasa_total_confirmados": 7420.615568483882,
+      "confirmados_PDIA": 53711,
+      "tasa_PDIA": 7378.442052627603,
+      "confirmados_PDIA_14": 877,
+      "tasa_PDIA_14": 120.47613487282693,
+      "confirmados_PDIA_7": 370,
+      "tasa_PDIA_7": 50.82801585284603,
+      "curados": 50223,
+      "fallecidos": 823
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 39,
+    "fields": {
+      "fecha_creacion": "2021-05-13",
+      "lugar_de_residencia": "cádiz",
+      "total_confirmados": 79821,
+      "tasa_total_confirmados": 6416.226370504699,
+      "confirmados_PDIA": 79440,
+      "tasa_PDIA": 6385.600567180231,
+      "confirmados_PDIA_14": 1106,
+      "tasa_PDIA_14": 88.90325059543474,
+      "confirmados_PDIA_7": 516,
+      "tasa_PDIA_7": 41.47746591975075,
+      "curados": 74194,
+      "fallecidos": 1467
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 40,
+    "fields": {
+      "fecha_creacion": "2021-05-13",
+      "lugar_de_residencia": "córdoba",
+      "total_confirmados": 51178,
+      "tasa_total_confirmados": 6518.743074042467,
+      "confirmados_PDIA": 50729,
+      "tasa_PDIA": 6461.5521787311,
+      "confirmados_PDIA_14": 1137,
+      "tasa_PDIA_14": 144.8241602873556,
+      "confirmados_PDIA_7": 480,
+      "tasa_PDIA_7": 61.13948719255117,
+      "curados": 46093,
+      "fallecidos": 947
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 41,
+    "fields": {
+      "fecha_creacion": "2021-05-13",
+      "lugar_de_residencia": "granada",
+      "total_confirmados": 85212,
+      "tasa_total_confirmados": 9270.55772176577,
+      "confirmados_PDIA": 84379,
+      "tasa_PDIA": 9179.932286589612,
+      "confirmados_PDIA_14": 2829,
+      "tasa_PDIA_14": 307.7783386714942,
+      "confirmados_PDIA_7": 1058,
+      "tasa_PDIA_7": 115.10409413730679,
+      "curados": 73894,
+      "fallecidos": 1732
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 42,
+    "fields": {
+      "fecha_creacion": "2021-05-13",
+      "lugar_de_residencia": "huelva",
+      "total_confirmados": 29294,
+      "tasa_total_confirmados": 5708.439698345578,
+      "confirmados_PDIA": 29118,
+      "tasa_PDIA": 5674.143071496775,
+      "confirmados_PDIA_14": 990,
+      "tasa_PDIA_14": 192.91852602451428,
+      "confirmados_PDIA_7": 495,
+      "tasa_PDIA_7": 96.45926301225714,
+      "curados": 25745,
+      "fallecidos": 370
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 43,
+    "fields": {
+      "fecha_creacion": "2021-05-13",
+      "lugar_de_residencia": "jaén",
+      "total_confirmados": 47844,
+      "tasa_total_confirmados": 7577.674969630065,
+      "confirmados_PDIA": 47295,
+      "tasa_PDIA": 7490.722717344994,
+      "confirmados_PDIA_14": 1308,
+      "tasa_PDIA_14": 207.16492894147908,
+      "confirmados_PDIA_7": 610,
+      "tasa_PDIA_7": 96.61361365007816,
+      "curados": 43058,
+      "fallecidos": 971
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 44,
+    "fields": {
+      "fecha_creacion": "2021-05-13",
+      "lugar_de_residencia": "málaga",
+      "total_confirmados": 98444,
+      "tasa_total_confirmados": 5839.185726487615,
+      "confirmados_PDIA": 96577,
+      "tasa_PDIA": 5728.445003321628,
+      "confirmados_PDIA_14": 2152,
+      "tasa_PDIA_14": 127.64543987852329,
+      "confirmados_PDIA_7": 909,
+      "tasa_PDIA_7": 53.91714909366993,
+      "curados": 90947,
+      "fallecidos": 1636
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 45,
+    "fields": {
+      "fecha_creacion": "2021-05-13",
+      "lugar_de_residencia": "sevilla",
+      "total_confirmados": 122978,
+      "tasa_total_confirmados": 6281.7977124036115,
+      "confirmados_PDIA": 122165,
+      "tasa_PDIA": 6240.269133794558,
+      "confirmados_PDIA_14": 4118,
+      "tasa_PDIA_14": 210.3501681575409,
+      "confirmados_PDIA_7": 1863,
+      "tasa_PDIA_7": 95.16327422960144,
+      "curados": 108683,
+      "fallecidos": 1965
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 46,
+    "fields": {
+      "fecha_creacion": "2021-05-14",
+      "lugar_de_residencia": "andalucía",
+      "total_confirmados": 570390,
+      "tasa_total_confirmados": 6738.685066214293,
+      "confirmados_PDIA": 565016,
+      "tasa_PDIA": 6675.195710605262,
+      "confirmados_PDIA_14": 14524,
+      "tasa_PDIA_14": 171.58902137431653,
+      "confirmados_PDIA_7": 6633,
+      "tasa_PDIA_7": 78.36339705149005,
+      "curados": 515664,
+      "fallecidos": 9922
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 47,
+    "fields": {
+      "fecha_creacion": "2021-05-14",
+      "lugar_de_residencia": "almería",
+      "total_confirmados": 54085,
+      "tasa_total_confirmados": 7429.819560543722,
+      "confirmados_PDIA": 53778,
+      "tasa_PDIA": 7387.646044687442,
+      "confirmados_PDIA_14": 847,
+      "tasa_PDIA_14": 116.35494439827185,
+      "confirmados_PDIA_7": 348,
+      "tasa_PDIA_7": 47.80580950483896,
+      "curados": 50471,
+      "fallecidos": 823
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 48,
+    "fields": {
+      "fecha_creacion": "2021-05-14",
+      "lugar_de_residencia": "cádiz",
+      "total_confirmados": 79937,
+      "tasa_total_confirmados": 6425.550762068054,
+      "confirmados_PDIA": 79556,
+      "tasa_PDIA": 6394.924958743586,
+      "confirmados_PDIA_14": 1084,
+      "tasa_PDIA_14": 87.13483150583296,
+      "confirmados_PDIA_7": 540,
+      "tasa_PDIA_7": 43.406650381134504,
+      "curados": 74496,
+      "fallecidos": 1470
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 49,
+    "fields": {
+      "fecha_creacion": "2021-05-14",
+      "lugar_de_residencia": "córdoba",
+      "total_confirmados": 51251,
+      "tasa_total_confirmados": 6528.041371053,
+      "confirmados_PDIA": 50802,
+      "tasa_PDIA": 6470.850475741635,
+      "confirmados_PDIA_14": 1110,
+      "tasa_PDIA_14": 141.38506413277457,
+      "confirmados_PDIA_7": 462,
+      "tasa_PDIA_7": 58.8467564228305,
+      "curados": 46317,
+      "fallecidos": 948
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 50,
+    "fields": {
+      "fecha_creacion": "2021-05-14",
+      "lugar_de_residencia": "granada",
+      "total_confirmados": 85489,
+      "tasa_total_confirmados": 9300.69367079794,
+      "confirmados_PDIA": 84656,
+      "tasa_PDIA": 9210.06823562178,
+      "confirmados_PDIA_14": 2761,
+      "tasa_PDIA_14": 300.3803439632363,
+      "confirmados_PDIA_7": 1083,
+      "tasa_PDIA_7": 117.82394513298983,
+      "curados": 74436,
+      "fallecidos": 1736
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 51,
+    "fields": {
+      "fecha_creacion": "2021-05-14",
+      "lugar_de_residencia": "huelva",
+      "total_confirmados": 29426,
+      "tasa_total_confirmados": 5734.162168482179,
+      "confirmados_PDIA": 29250,
+      "tasa_PDIA": 5699.865541633377,
+      "confirmados_PDIA_14": 1030,
+      "tasa_PDIA_14": 200.7132139446967,
+      "confirmados_PDIA_7": 542,
+      "tasa_PDIA_7": 105.61802131847145,
+      "curados": 25910,
+      "fallecidos": 370
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 52,
+    "fields": {
+      "fecha_creacion": "2021-05-14",
+      "lugar_de_residencia": "jaén",
+      "total_confirmados": 47996,
+      "tasa_total_confirmados": 7601.749181555986,
+      "confirmados_PDIA": 47447,
+      "tasa_PDIA": 7514.796929270916,
+      "confirmados_PDIA_14": 1327,
+      "tasa_PDIA_14": 210.17420543221922,
+      "confirmados_PDIA_7": 616,
+      "tasa_PDIA_7": 97.56391148925925,
+      "curados": 43327,
+      "fallecidos": 974
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 53,
+    "fields": {
+      "fecha_creacion": "2021-05-14",
+      "lugar_de_residencia": "málaga",
+      "total_confirmados": 98713,
+      "tasa_total_confirmados": 5855.14140647243,
+      "confirmados_PDIA": 96847,
+      "tasa_PDIA": 5744.459998101926,
+      "confirmados_PDIA_14": 2199,
+      "tasa_PDIA_14": 130.4332352662048,
+      "confirmados_PDIA_7": 985,
+      "tasa_PDIA_7": 58.42507355034639,
+      "curados": 91300,
+      "fallecidos": 1636
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 54,
+    "fields": {
+      "fecha_creacion": "2021-05-14",
+      "lugar_de_residencia": "sevilla",
+      "total_confirmados": 123493,
+      "tasa_total_confirmados": 6308.104253588926,
+      "confirmados_PDIA": 122680,
+      "tasa_PDIA": 6266.575674979874,
+      "confirmados_PDIA_14": 4166,
+      "tasa_PDIA_14": 212.80203995733743,
+      "confirmados_PDIA_7": 2057,
+      "tasa_PDIA_7": 105.07292275377894,
+      "curados": 109407,
+      "fallecidos": 1965
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 55,
+    "fields": {
+      "fecha_creacion": "2021-05-17",
+      "lugar_de_residencia": "andalucía",
+      "total_confirmados": 572977,
+      "tasa_total_confirmados": 6769.2483269066215,
+      "confirmados_PDIA": 567600,
+      "tasa_PDIA": 6705.723528784224,
+      "confirmados_PDIA_14": 14387,
+      "tasa_PDIA_14": 169.97047993061773,
+      "confirmados_PDIA_7": 6608,
+      "tasa_PDIA_7": 78.06804277344284,
+      "curados": 521893,
+      "fallecidos": 9932
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 56,
+    "fields": {
+      "fecha_creacion": "2021-05-17",
+      "lugar_de_residencia": "almería",
+      "total_confirmados": 54157,
+      "tasa_total_confirmados": 7439.710417682654,
+      "confirmados_PDIA": 53849,
+      "tasa_PDIA": 7397.399528810555,
+      "confirmados_PDIA_14": 742,
+      "tasa_PDIA_14": 101.93077773732907,
+      "confirmados_PDIA_7": 238,
+      "tasa_PDIA_7": 32.69477776480366,
+      "curados": 51013,
+      "fallecidos": 823
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 57,
+    "fields": {
+      "fecha_creacion": "2021-05-17",
+      "lugar_de_residencia": "cádiz",
+      "total_confirmados": 80144,
+      "tasa_total_confirmados": 6442.189978047489,
+      "confirmados_PDIA": 79763,
+      "tasa_PDIA": 6411.564174723021,
+      "confirmados_PDIA_14": 1063,
+      "tasa_PDIA_14": 85.44679510212218,
+      "confirmados_PDIA_7": 529,
+      "tasa_PDIA_7": 42.522440836333615,
+      "curados": 75171,
+      "fallecidos": 1471
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 58,
+    "fields": {
+      "fecha_creacion": "2021-05-17",
+      "lugar_de_residencia": "córdoba",
+      "total_confirmados": 51438,
+      "tasa_total_confirmados": 6551.860296271765,
+      "confirmados_PDIA": 50988,
+      "tasa_PDIA": 6494.542027028748,
+      "confirmados_PDIA_14": 1023,
+      "tasa_PDIA_14": 130.30353207912466,
+      "confirmados_PDIA_7": 471,
+      "tasa_PDIA_7": 59.993121807690834,
+      "curados": 46871,
+      "fallecidos": 949
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 59,
+    "fields": {
+      "fecha_creacion": "2021-05-17",
+      "lugar_de_residencia": "granada",
+      "total_confirmados": 85947,
+      "tasa_total_confirmados": 9350.521341038851,
+      "confirmados_PDIA": 85114,
+      "tasa_PDIA": 9259.895905862693,
+      "confirmados_PDIA_14": 2661,
+      "tasa_PDIA_14": 289.5009399805041,
+      "confirmados_PDIA_7": 1164,
+      "tasa_PDIA_7": 126.63626235900293,
+      "curados": 75696,
+      "fallecidos": 1742
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 60,
+    "fields": {
+      "fecha_creacion": "2021-05-17",
+      "lugar_de_residencia": "huelva",
+      "total_confirmados": 29677,
+      "tasa_total_confirmados": 5783.073835181323,
+      "confirmados_PDIA": 29501,
+      "tasa_PDIA": 5748.777208332522,
+      "confirmados_PDIA_14": 1125,
+      "tasa_PDIA_14": 219.22559775512988,
+      "confirmados_PDIA_7": 615,
+      "tasa_PDIA_7": 119.84332677280433,
+      "curados": 26297,
+      "fallecidos": 370
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 61,
+    "fields": {
+      "fecha_creacion": "2021-05-17",
+      "lugar_de_residencia": "jaén",
+      "total_confirmados": 48241,
+      "tasa_total_confirmados": 7640.553009989214,
+      "confirmados_PDIA": 47692,
+      "tasa_PDIA": 7553.600757704145,
+      "confirmados_PDIA_14": 1315,
+      "tasa_PDIA_14": 208.27360975385702,
+      "confirmados_PDIA_7": 621,
+      "tasa_PDIA_7": 98.35582635524351,
+      "curados": 43902,
+      "fallecidos": 975
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 62,
+    "fields": {
+      "fecha_creacion": "2021-05-17",
+      "lugar_de_residencia": "málaga",
+      "total_confirmados": 99128,
+      "tasa_total_confirmados": 5879.757046597703,
+      "confirmados_PDIA": 97261,
+      "tasa_PDIA": 5769.016323431717,
+      "confirmados_PDIA_14": 2267,
+      "tasa_PDIA_14": 134.4666413590206,
+      "confirmados_PDIA_7": 988,
+      "tasa_PDIA_7": 58.60301793679416,
+      "curados": 92028,
+      "fallecidos": 1637
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 63,
+    "fields": {
+      "fecha_creacion": "2021-05-17",
+      "lugar_de_residencia": "sevilla",
+      "total_confirmados": 124245,
+      "tasa_total_confirmados": 6346.5169117857395,
+      "confirmados_PDIA": 123432,
+      "tasa_PDIA": 6304.988333176687,
+      "confirmados_PDIA_14": 4191,
+      "tasa_PDIA_14": 214.07905651973144,
+      "confirmados_PDIA_7": 1982,
+      "tasa_PDIA_7": 101.24187306659694,
+      "curados": 110915,
+      "fallecidos": 1965
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 64,
+    "fields": {
+      "fecha_creacion": "2021-05-17",
+      "lugar_de_residencia": "andalucía",
+      "total_confirmados": 572977,
+      "tasa_total_confirmados": 6769.2483269066215,
+      "confirmados_PDIA": 567600,
+      "tasa_PDIA": 6705.723528784224,
+      "confirmados_PDIA_14": 14387,
+      "tasa_PDIA_14": 169.97047993061773,
+      "confirmados_PDIA_7": 6608,
+      "tasa_PDIA_7": 78.06804277344284,
+      "curados": 521893,
+      "fallecidos": 9932
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 65,
+    "fields": {
+      "fecha_creacion": "2021-05-17",
+      "lugar_de_residencia": "almería",
+      "total_confirmados": 54157,
+      "tasa_total_confirmados": 7439.710417682654,
+      "confirmados_PDIA": 53849,
+      "tasa_PDIA": 7397.399528810555,
+      "confirmados_PDIA_14": 742,
+      "tasa_PDIA_14": 101.93077773732907,
+      "confirmados_PDIA_7": 238,
+      "tasa_PDIA_7": 32.69477776480366,
+      "curados": 51013,
+      "fallecidos": 823
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 66,
+    "fields": {
+      "fecha_creacion": "2021-05-17",
+      "lugar_de_residencia": "cádiz",
+      "total_confirmados": 80144,
+      "tasa_total_confirmados": 6442.189978047489,
+      "confirmados_PDIA": 79763,
+      "tasa_PDIA": 6411.564174723021,
+      "confirmados_PDIA_14": 1063,
+      "tasa_PDIA_14": 85.44679510212218,
+      "confirmados_PDIA_7": 529,
+      "tasa_PDIA_7": 42.522440836333615,
+      "curados": 75171,
+      "fallecidos": 1471
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 67,
+    "fields": {
+      "fecha_creacion": "2021-05-17",
+      "lugar_de_residencia": "córdoba",
+      "total_confirmados": 51438,
+      "tasa_total_confirmados": 6551.860296271765,
+      "confirmados_PDIA": 50988,
+      "tasa_PDIA": 6494.542027028748,
+      "confirmados_PDIA_14": 1023,
+      "tasa_PDIA_14": 130.30353207912466,
+      "confirmados_PDIA_7": 471,
+      "tasa_PDIA_7": 59.993121807690834,
+      "curados": 46871,
+      "fallecidos": 949
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 68,
+    "fields": {
+      "fecha_creacion": "2021-05-17",
+      "lugar_de_residencia": "granada",
+      "total_confirmados": 85947,
+      "tasa_total_confirmados": 9350.521341038851,
+      "confirmados_PDIA": 85114,
+      "tasa_PDIA": 9259.895905862693,
+      "confirmados_PDIA_14": 2661,
+      "tasa_PDIA_14": 289.5009399805041,
+      "confirmados_PDIA_7": 1164,
+      "tasa_PDIA_7": 126.63626235900293,
+      "curados": 75696,
+      "fallecidos": 1742
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 69,
+    "fields": {
+      "fecha_creacion": "2021-05-17",
+      "lugar_de_residencia": "huelva",
+      "total_confirmados": 29677,
+      "tasa_total_confirmados": 5783.073835181323,
+      "confirmados_PDIA": 29501,
+      "tasa_PDIA": 5748.777208332522,
+      "confirmados_PDIA_14": 1125,
+      "tasa_PDIA_14": 219.22559775512988,
+      "confirmados_PDIA_7": 615,
+      "tasa_PDIA_7": 119.84332677280433,
+      "curados": 26297,
+      "fallecidos": 370
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 70,
+    "fields": {
+      "fecha_creacion": "2021-05-17",
+      "lugar_de_residencia": "jaén",
+      "total_confirmados": 48241,
+      "tasa_total_confirmados": 7640.553009989214,
+      "confirmados_PDIA": 47692,
+      "tasa_PDIA": 7553.600757704145,
+      "confirmados_PDIA_14": 1315,
+      "tasa_PDIA_14": 208.27360975385702,
+      "confirmados_PDIA_7": 621,
+      "tasa_PDIA_7": 98.35582635524351,
+      "curados": 43902,
+      "fallecidos": 975
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 71,
+    "fields": {
+      "fecha_creacion": "2021-05-17",
+      "lugar_de_residencia": "málaga",
+      "total_confirmados": 99128,
+      "tasa_total_confirmados": 5879.757046597703,
+      "confirmados_PDIA": 97261,
+      "tasa_PDIA": 5769.016323431717,
+      "confirmados_PDIA_14": 2267,
+      "tasa_PDIA_14": 134.4666413590206,
+      "confirmados_PDIA_7": 988,
+      "tasa_PDIA_7": 58.60301793679416,
+      "curados": 92028,
+      "fallecidos": 1637
+    }
+  },
+  {
+    "model": "estadisticas.estadisticastipo1",
+    "pk": 72,
+    "fields": {
+      "fecha_creacion": "2021-05-17",
+      "lugar_de_residencia": "sevilla",
+      "total_confirmados": 124245,
+      "tasa_total_confirmados": 6346.5169117857395,
+      "confirmados_PDIA": 123432,
+      "tasa_PDIA": 6304.988333176687,
+      "confirmados_PDIA_14": 4191,
+      "tasa_PDIA_14": 214.07905651973144,
+      "confirmados_PDIA_7": 1982,
+      "tasa_PDIA_7": 101.24187306659694,
+      "curados": 110915,
+      "fallecidos": 1965
+    }
+  }
+]
