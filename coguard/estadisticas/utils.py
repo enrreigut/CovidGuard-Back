@@ -102,6 +102,13 @@ def getAyudas():
     res += "\t * Tipos de estadísticas\n"
     res += "\t * Listado de estadísticas generales &lt;provincia&gt; &lt;fecha&gt;\n"
     res += "\t * Estadísticas &lt;tipo de estadística&gt; &lt;provincia&gt; &lt;fecha&gt;\n"
+    res += "<b>Vacunas:</b>\n"
+    res += "\t * Listado de vacunas\n"
+    res += "\t * Información general &lt;vacuna&gt;\n"
+    res += "\t * Efectividad &lt;vacuna&gt;\n"
+    res += "\t * Número de dosis &lt;vacuna&gt;\n"
+    res += "\t * Intervalo de dosis &lt;vacuna&gt;\n"
+    res += "\t * Vacuna asignada"
 
     return res
 

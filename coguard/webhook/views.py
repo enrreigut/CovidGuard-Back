@@ -1,6 +1,7 @@
 from rest_framework.views import APIView
 from django.http import JsonResponse
 from estadisticas.utils import *
+from vacunacion.utils import *
 import json
 
 
@@ -9,7 +10,13 @@ acciones = {
     'ESTADISTICAS FECHAS': 'getEstadisticasFechas',
     'ESTADISTICAS TIPOS': 'getTiposEstadisticas',
     'ESTADISTICAS GENERALES': 'getEstadisticasGenerales',
-    'ESTADISTICAS ESPECIFICAS': 'getEstadisticasEspecificas'
+    'ESTADISTICAS ESPECIFICAS': 'getEstadisticasEspecificas',
+    'EFECTIVIDAD VACUNA': 'getEfectividadVacuna',
+    'NUMERO DOSIS VACUNA': 'getNumeroDosisVacuna',
+    'INTERVALO DOSIS VACUNA': 'getIntervaloDosisVacuna',
+    'INFO GENERAL VACUNA': 'getInfoGeneralVacuna',
+    'LISTADO VACUNAS': 'getListadoVacunas',
+    'VACUNA POR EDAD': 'getVacunaPorEdad',
 }
 
 
@@ -41,5 +48,21 @@ class WebhookEstadisticasTipo1API(APIView):
             res = prettyPrint(getEstadisticasGenerales(body))
         elif action == acciones['ESTADISTICAS ESPECIFICAS']:
             res = prettyPrint(getEstadisticasEspecificas(body))
+        
+        # Vacunas
+            
+        elif action == acciones['EFECTIVIDAD VACUNA']:
+            res = prettyPrint(getEfectividadVacuna(body))
+        elif action == acciones['NUMERO DOSIS VACUNA']:
+            res = prettyPrint(getNumeroDosisVacuna(body))
+        elif action == acciones['INTERVALO DOSIS VACUNA']:
+            res = prettyPrint(getIntervaloDosisVacuna(body))
+        elif action == acciones['INFO GENERAL VACUNA']:
+            res = prettyPrint(getInfoGeneralVacuna(body))
+        elif action == acciones['VACUNA POR EDAD']:
+            res = prettyPrint(getVacunaPorEdad(body))    
+        elif action == acciones['LISTADO VACUNAS']:
+            res = prettyPrint(getListadoVacunas(body))
+        
 
         return JsonResponse(res, safe=False)
