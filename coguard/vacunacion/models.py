@@ -10,3 +10,11 @@ class Vacuna(models.Model):
     
     def __str__(self):
         return self.nombre
+    
+class IntervaloEdad(models.Model):
+    inicio = models.IntegerField(blank=True, null=True)
+    fin = models.IntegerField(blank=True, null=True)
+    tipo_de_vacuna = models.CharField(blank=False, null=False, max_length=120)
+    
+    def __str__(self):
+        return "(" + str(self.inicio) + " - " + str(self.fin) + ")"
