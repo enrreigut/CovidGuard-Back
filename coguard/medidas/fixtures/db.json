@@ -1,0 +1,130 @@
+[
+  {
+    "model": "medidas.medidas",
+    "pk": 1,
+    "fields": {
+      "provincia": "Sevilla",
+      "fecha_creacion": "2021-05-13",
+      "nivel": "3",
+      "cierre_perimetral": false,
+      "horarios_ocio_nocturno": "02:00",
+      "aforo_ocio_nocturno_exterior": "6",
+      "aforo_ocio_nocturno_interior": null,
+      "horario_hosteleria": "24:00",
+      "aforo_hosteleria_nocturno_exterior": "6",
+      "aforo_hosteleria_nocturno_interior": "4"
+    }
+  },
+  {
+    "model": "medidas.medidas",
+    "pk": 2,
+    "fields": {
+      "provincia": "C�rdoba",
+      "fecha_creacion": "2021-05-13",
+      "nivel": "2",
+      "cierre_perimetral": false,
+      "horarios_ocio_nocturno": "02:00",
+      "aforo_ocio_nocturno_exterior": "8",
+      "aforo_ocio_nocturno_interior": "6",
+      "horario_hosteleria": "24:00",
+      "aforo_hosteleria_nocturno_exterior": "8",
+      "aforo_hosteleria_nocturno_interior": "6"
+    }
+  },
+  {
+    "model": "medidas.medidas",
+    "pk": 3,
+    "fields": {
+      "provincia": "Granada",
+      "fecha_creacion": "2021-05-13",
+      "nivel": "4",
+      "cierre_perimetral": false,
+      "horarios_ocio_nocturno": "N",
+      "aforo_ocio_nocturno_exterior": null,
+      "aforo_ocio_nocturno_interior": null,
+      "horario_hosteleria": "24:00",
+      "aforo_hosteleria_nocturno_exterior": "6",
+      "aforo_hosteleria_nocturno_interior": "4"
+    }
+  },
+  {
+    "model": "medidas.medidas",
+    "pk": 4,
+    "fields": {
+      "provincia": "C�diz",
+      "fecha_creacion": "2021-05-13",
+      "nivel": "2",
+      "cierre_perimetral": false,
+      "horarios_ocio_nocturno": "02:00",
+      "aforo_ocio_nocturno_exterior": "8",
+      "aforo_ocio_nocturno_interior": "6",
+      "horario_hosteleria": "24:00",
+      "aforo_hosteleria_nocturno_exterior": "8",
+      "aforo_hosteleria_nocturno_interior": "6"
+    }
+  },
+  {
+    "model": "medidas.medidas",
+    "pk": 5,
+    "fields": {
+      "provincia": "Almer�a",
+      "fecha_creacion": "2021-05-13",
+      "nivel": "2",
+      "cierre_perimetral": false,
+      "horarios_ocio_nocturno": "02:00",
+      "aforo_ocio_nocturno_exterior": "8",
+      "aforo_ocio_nocturno_interior": "6",
+      "horario_hosteleria": "24:00",
+      "aforo_hosteleria_nocturno_exterior": "8",
+      "aforo_hosteleria_nocturno_interior": "6"
+    }
+  },
+  {
+    "model": "medidas.medidas",
+    "pk": 6,
+    "fields": {
+      "provincia": "Huelva",
+      "fecha_creacion": "2021-05-13",
+      "nivel": "2",
+      "cierre_perimetral": false,
+      "horarios_ocio_nocturno": "02:00",
+      "aforo_ocio_nocturno_exterior": "8",
+      "aforo_ocio_nocturno_interior": "6",
+      "horario_hosteleria": "24:00",
+      "aforo_hosteleria_nocturno_exterior": "8",
+      "aforo_hosteleria_nocturno_interior": "6"
+    }
+  },
+  {
+    "model": "medidas.medidas",
+    "pk": 7,
+    "fields": {
+      "provincia": "Ja�n",
+      "fecha_creacion": "2021-05-13",
+      "nivel": "3",
+      "cierre_perimetral": false,
+      "horarios_ocio_nocturno": "02:00",
+      "aforo_ocio_nocturno_exterior": "6",
+      "aforo_ocio_nocturno_interior": null,
+      "horario_hosteleria": "24:00",
+      "aforo_hosteleria_nocturno_exterior": "6",
+      "aforo_hosteleria_nocturno_interior": "4"
+    }
+  },
+  {
+    "model": "medidas.medidas",
+    "pk": 8,
+    "fields": {
+      "provincia": "M�laga",
+      "fecha_creacion": "2021-05-13",
+      "nivel": "2",
+      "cierre_perimetral": false,
+      "horarios_ocio_nocturno": "02:00",
+      "aforo_ocio_nocturno_exterior": "8",
+      "aforo_ocio_nocturno_interior": "6",
+      "horario_hosteleria": "24:00",
+      "aforo_hosteleria_nocturno_exterior": "8",
+      "aforo_hosteleria_nocturno_interior": "6"
+    }
+  }
+]
