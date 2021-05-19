@@ -1,7 +1,10 @@
 from django.db import models
 
+class Medidas(models.Model):
 
-class Niveles(models.Model):
+    provincia = models.CharField(blank=True, null=True, max_length=150)
+
+    fecha_creacion = models.DateField(blank=True, null=True)
 
     NIVELES_ENUM = [
         ('0', 'Sin Alerta'),
@@ -15,6 +18,19 @@ class Niveles(models.Model):
 
     nivel = models.CharField(max_length=5, choices=NIVELES_ENUM, blank=True, null=True)
 
+    cierre_perimetral = models.BooleanField(blank=True, null=True)
 
-class MedidasGenerales(models.Model):
-    fecha_creacion = models.DateField(blank=True, null=True)
+    horarios_ocio_nocturno = models.CharField(blank=True, null=True, max_length=5)
+
+    aforo_ocio_nocturno_exterior = models.CharField(blank=True, null=True, max_length=5)
+
+    aforo_ocio_nocturno_interior = models.CharField(blank=True, null=True, max_length=5)
+
+    horario_hosteleria = models.CharField(blank=True, null=True, max_length=5)
+
+    aforo_hosteleria_nocturno_exterior = models.CharField(blank=True, null=True, max_length=5)
+
+    aforo_hosteleria_nocturno_interior = models.CharField(blank=True, null=True, max_length=5)
+
+    def __str__(self):
+        return self.provincia + "(" + str(self.fecha_creacion) + ")"
