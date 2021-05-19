@@ -14,7 +14,7 @@ class Vacuna(models.Model):
 class IntervaloEdad(models.Model):
     inicio = models.IntegerField(blank=True, null=True)
     fin = models.IntegerField(blank=True, null=True)
-    tipo_de_vacuna = models.CharField(blank=False, null=False, max_length=120)
+    tipo_de_vacuna = models.CharField(blank=False, null=False, max_length=255)
     
     def __str__(self):
         return "(" + str(self.inicio) + " - " + str(self.fin) + ")"

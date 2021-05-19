@@ -60,13 +60,13 @@ def getInfoGeneralVacuna(body):
         res = "Tengo los siguientes datos de <b>" + str(vacuna) + apodo + "</b>:\n"
         
         if vacuna.numero_de_dosis > 1:
-            res += "&gt Requiere de <b>" + str(vacuna.numero_de_dosis) + " dosis</b>\n"
-            res += "&gt La segunda dosis se administra <b>" + vacuna.intervalo_dosis + " </b>después de la primera.\n"
+            res += "&#8226; Requiere de <b>" + str(vacuna.numero_de_dosis) + " dosis</b>\n"
+            res += "&#8226; La segunda dosis se administra <b>" + vacuna.intervalo_dosis + " </b>después de la primera.\n"
         else:
-            res += "&gt Requiere de <b>" + str(vacuna.numero_de_dosis) + " dosis</b>\n"
+            res += "&#8226; Requiere de <b>" + str(vacuna.numero_de_dosis) + " dosis</b>\n"
             
         
-        res += "&gt Es efectiva tras <b>" + str(vacuna.dias_hasta_efectividad) + " días</b>" + segunda_dosis_info
+        res += "&#8226; Es efectiva tras <b>" + str(vacuna.dias_hasta_efectividad) + " días</b>" + segunda_dosis_info
 
     return res
 
@@ -79,9 +79,9 @@ def getListadoVacunas(body):
     for vacuna in vacunas:
         
         if vacuna.apodo is not None:
-            res += "&gt <b>" + vacuna.nombre + " (" + vacuna.apodo + ")</b>\n"
+            res += "&#8226; <b>" + vacuna.nombre + " (" + vacuna.apodo + ")</b>\n"
         else:
-            res += "&gt <b>" + vacuna.nombre + "</b>\n"
+            res += "&#8226; <b>" + vacuna.nombre + "</b>\n"
             
     res += "\n¿Cuál te interesa?"
             
@@ -103,6 +103,18 @@ def getVacunaPorEdad(body):
         if tipo_vacuna != "Por determinar":
             res = "En ese caso, te corresponderá:\n" + tipo_vacuna
     
+    return res
+
+def getAyudaVacunacion():
+    res = "La información disponible de <b>Vacunación</b> es:\n"
+
+    res += "\t &#8226; Listado de vacunas\n"
+    res += "\t &#8226; Información general &lt;vacuna&gt;\n"
+    res += "\t &#8226; Efectividad &lt;vacuna&gt;\n"
+    res += "\t &#8226; Número de dosis &lt;vacuna&gt;\n"
+    res += "\t &#8226; Intervalo de dosis &lt;vacuna&gt;\n"
+    res += "\t &#8226; Vacuna asignada"
+
     return res
     
         
