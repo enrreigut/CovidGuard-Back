@@ -1,12 +1,16 @@
 from rest_framework.views import APIView
-from django.http import JsonResponse
 from estadisticas.utils import *
 from vacunacion.utils import *
+from .utils import *
 import json
 
 
 acciones = {
-    'AYUDAS': 'getAyudas',
+    'AYUDA': 'getAyuda',
+    'AYUDA TODO': 'getAyudaTodo',
+    'AYUDA ESTADISTICAS': 'getAyudaEstadisticas',
+    'AYUDA VACUNACION': 'getAyudaVacunacion',
+    'AYUDA MEDIDAS': 'getAyudaMedidas',
     'ESTADISTICAS FECHAS': 'getEstadisticasFechas',
     'ESTADISTICAS TIPOS': 'getTiposEstadisticas',
     'ESTADISTICAS GENERALES': 'getEstadisticasGenerales',
@@ -36,10 +40,21 @@ class WebhookEstadisticasTipo1API(APIView):
         except Exception as e:
             return JsonResponse({'fulfillmentText': "Error al obtener la acción (" + e + ")"}, safe=False)
 
-        # Estadisticas
+        # General
 
-        if action == acciones['AYUDAS']:
-            res = prettyPrint(getAyudas())
+        if action == acciones['AYUDA']:
+            res = prettyPrint(getAyuda())
+        elif action == acciones['AYUDA TODO']:
+            res = prettyPrint(getAyudaTodo())
+        elif action == acciones['AYUDA ESTADISTICAS']:
+            res = prettyPrint(getAyudaEstadisticas())
+        elif action == acciones['AYUDA VACUNACION']:
+            res = prettyPrint(getAyudaVacunacion())
+        elif action == acciones['AYUDA MEDIDAS']:
+            res = prettyPrint(getAyudaVacunacion())
+            
+        # Estadisticas
+        
         elif action == acciones['ESTADISTICAS FECHAS']:
             res = prettyPrint(getFechasEstadisticas())
         elif action == acciones['ESTADISTICAS TIPOS']:

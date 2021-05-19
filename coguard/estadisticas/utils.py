@@ -3,22 +3,6 @@ from django.http import JsonResponse
 import datetime
 
 
-def prettyPrint(msg):
-    payload_data = {
-        "fulfillmentMessages": [{
-            "payload": {
-                "telegram": {
-                    "text": msg,
-                    "parse_mode": "html"
-                }
-            },
-            "platform": "TELEGRAM"
-        }]
-    }
-
-    return payload_data
-
-
 def getEstadisticasGenerales(body):
 
     res = ""
@@ -88,27 +72,19 @@ def getFechasEstadisticas():
 
     res = "Las fechas con estadísticas son: \n"
     for fecha in fechas:
-        res += "> <b>" + str(fecha['fecha_creacion']) + "</b>\n"
+        res += "&#8226; <b>" + str(fecha['fecha_creacion']) + "</b>\n"
 
     return res
 
 
-def getAyudas():
-    res = "Esto son las cosas de las que te puedo dar información:\n"
+def getAyudaEstadisticas():
+    res = "La información disponible de <b>Estadísticas</b> es:\n"
 
-    res += "<b>Estadísticas:</b>\n"
-    res += "\t * Listado de provincias\n"
-    res += "\t * Listado de fechas\n"
-    res += "\t * Tipos de estadísticas\n"
-    res += "\t * Listado de estadísticas generales &lt;provincia&gt; &lt;fecha&gt;\n"
-    res += "\t * Estadísticas &lt;tipo de estadística&gt; &lt;provincia&gt; &lt;fecha&gt;\n"
-    res += "<b>Vacunas:</b>\n"
-    res += "\t * Listado de vacunas\n"
-    res += "\t * Información general &lt;vacuna&gt;\n"
-    res += "\t * Efectividad &lt;vacuna&gt;\n"
-    res += "\t * Número de dosis &lt;vacuna&gt;\n"
-    res += "\t * Intervalo de dosis &lt;vacuna&gt;\n"
-    res += "\t * Vacuna asignada"
+    res += "\t &#8226; Listado de provincias\n"
+    res += "\t &#8226; Listado de fechas\n"
+    res += "\t &#8226; Tipos de estadísticas\n"
+    res += "\t &#8226; Listado de estadísticas generales &lt;provincia&gt; &lt;fecha&gt;\n"
+    res += "\t &#8226; Estadísticas &lt;tipo de estadística&gt; &lt;provincia&gt; &lt;fecha&gt;\n"
 
     return res
 
@@ -119,7 +95,7 @@ def getTipoEstadisticas():
     res = "Los <b>tipos de estadísticas</b> registrados son:\n"
     for field in fields:
         if field.name != "id":
-            res += "> <b>" + str(field.name) + "</b>\n"
+            res += "&#8226; <b>" + str(field.name) + "</b>\n"
 
     return res
 
