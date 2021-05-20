@@ -39,7 +39,7 @@ def getAyudaTodo():
     res += "\t &#8226; Efectividad &lt;vacuna&gt;\n"
     res += "\t &#8226; Número de dosis &lt;vacuna&gt;\n"
     res += "\t &#8226; Intervalo de dosis &lt;vacuna&gt;\n"
-    res += "\t &#8226; Vacuna asignada"
+    res += "\t &#8226; Vacuna asignada\n"
     res += "\n<b>Medidas:</b>\n"
     res += "\t &#8226; Listado de fechas con medidas\n"
     res += "\t &#8226; Listado de provincias con medidas\n"
