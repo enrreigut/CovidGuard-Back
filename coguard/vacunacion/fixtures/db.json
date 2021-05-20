@@ -1,100 +1,100 @@
 [
-    {
-        "model": "vacunacion.vacuna",
-        "pk": 1,
-        "fields": {
-            "nombre": "Comirnaty",
-            "apodo": "Pfizer",
-            "dias_hasta_efectividad": 7,
-            "numero_de_dosis": 2,
-            "intervalo_dosis": "3-4 semanas (21-28 días)"
-        }
-    },
-    {
-        "model": "vacunacion.vacuna",
-        "pk": 2,
-        "fields": {
-            "nombre": "Moderna",
-            "apodo": null,
-            "dias_hasta_efectividad": 14,
-            "numero_de_dosis": 2,
-            "intervalo_dosis": "1 mes (28 días)"
-        }
-    },
-    {
-        "model": "vacunacion.vacuna",
-        "pk": 3,
-        "fields": {
-            "nombre": "Janssen",
-            "apodo": null,
-            "dias_hasta_efectividad": 28,
-            "numero_de_dosis": 1,
-            "intervalo_dosis": null
-        }
-    },
-    {
-        "model": "vacunacion.vacuna",
-        "pk": 4,
-        "fields": {
-            "nombre": "AstraZeneca",
-            "apodo": null,
-            "dias_hasta_efectividad": 28,
-            "numero_de_dosis": 2,
-            "intervalo_dosis": "12 semanas (3 meses)"
-        }
-    },
-    {
-        "model": "vacunacion.intervaloedad",
-        "pk": 1,
-        "fields": {
-            "inicio": 1880,
-            "fin": 1941,
-            "tipo_de_vacuna": "<b>Pfizer o Moderna</b>"
-        }
-    },
-    {
-        "model": "vacunacion.intervaloedad",
-        "pk": 2,
-        "fields": {
-            "inicio": 1942,
-            "fin": 1951,
-            "tipo_de_vacuna": "<b>Pfizer o Moderna</b> de forma general.break&gt <b>Janssen</b> si tienes 70 años."
-        }
-    },
-    {
-        "model": "vacunacion.intervaloedad",
-        "pk": 3,
-        "fields": {
-            "inicio": 1952,
-            "fin": 1955,
-            "tipo_de_vacuna": "&gt <b>AstraZeneca</b> si tienes de 66 a 67 años.break&gt <b>Janssen o Pfizer o Moderna</b> si tienes de 68 a 69 años."
-        }
-    },
-    {
-        "model": "vacunacion.intervaloedad",
-        "pk": 4,
-        "fields": {
-            "inicio": 1956,
-            "fin": 1961,
-            "tipo_de_vacuna": "<b>AstraZeneca</b>"
-        }
-    },
-    {
-        "model": "vacunacion.intervaloedad",
-        "pk": 5,
-        "fields": {
-            "inicio": 1962,
-            "fin": 1971,
-            "tipo_de_vacuna": "<b>Pfizer o Moderna o Janssen</b>"
-        }
-    },
-    {
-        "model": "vacunacion.intervaloedad",
-        "pk": 6,
-        "fields": {
-            "inicio": 1972,
-            "fin": 2025,
-            "tipo_de_vacuna": "Por determinar"
-        }
+  {
+    "model": "vacunacion.vacuna",
+    "pk": 1,
+    "fields": {
+      "nombre": "Comirnaty",
+      "apodo": "Pfizer",
+      "dias_hasta_efectividad": 7,
+      "numero_de_dosis": 2,
+      "intervalo_dosis": "3-4 semanas (21-28 días)"
     }
+  },
+  {
+    "model": "vacunacion.vacuna",
+    "pk": 2,
+    "fields": {
+      "nombre": "Moderna",
+      "apodo": null,
+      "dias_hasta_efectividad": 14,
+      "numero_de_dosis": 2,
+      "intervalo_dosis": "1 mes (28 días)"
+    }
+  },
+  {
+    "model": "vacunacion.vacuna",
+    "pk": 3,
+    "fields": {
+      "nombre": "Janssen",
+      "apodo": null,
+      "dias_hasta_efectividad": 28,
+      "numero_de_dosis": 1,
+      "intervalo_dosis": null
+    }
+  },
+  {
+    "model": "vacunacion.vacuna",
+    "pk": 4,
+    "fields": {
+      "nombre": "AstraZeneca",
+      "apodo": null,
+      "dias_hasta_efectividad": 28,
+      "numero_de_dosis": 2,
+      "intervalo_dosis": "12 semanas (3 meses)"
+    }
+  },
+  {
+    "model": "vacunacion.intervaloedad",
+    "pk": 1,
+    "fields": {
+      "inicio": 1880,
+      "fin": 1941,
+      "tipo_de_vacuna": "<b>Pfizer o Moderna</b>"
+    }
+  },
+  {
+    "model": "vacunacion.intervaloedad",
+    "pk": 2,
+    "fields": {
+      "inicio": 1942,
+      "fin": 1951,
+      "tipo_de_vacuna": "&gt <b>Pfizer o Moderna</b> de forma general.break&gt <b>Janssen</b> si tienes 70 años."
+    }
+  },
+  {
+    "model": "vacunacion.intervaloedad",
+    "pk": 3,
+    "fields": {
+      "inicio": 1952,
+      "fin": 1955,
+      "tipo_de_vacuna": "&gt <b>AstraZeneca</b> si tienes de 66 a 67 años.break&gt <b>Janssen o Pfizer o Moderna</b> si tienes de 68 a 69 años."
+    }
+  },
+  {
+    "model": "vacunacion.intervaloedad",
+    "pk": 4,
+    "fields": {
+      "inicio": 1956,
+      "fin": 1961,
+      "tipo_de_vacuna": "<b>AstraZeneca</b>"
+    }
+  },
+  {
+    "model": "vacunacion.intervaloedad",
+    "pk": 5,
+    "fields": {
+      "inicio": 1962,
+      "fin": 1971,
+      "tipo_de_vacuna": "<b>Pfizer o Moderna o Janssen</b>"
+    }
+  },
+  {
+    "model": "vacunacion.intervaloedad",
+    "pk": 6,
+    "fields": {
+      "inicio": 1972,
+      "fin": 2025,
+      "tipo_de_vacuna": "Por determinar"
+    }
+  }
 ]

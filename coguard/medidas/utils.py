@@ -8,7 +8,7 @@ def getMedidasFechas():
 
     res = "Las fechas con medidas son: \n"
     for fecha in fechas:
-        res += "> <b>" + str(fecha['fecha_creacion']) + "</b>\n"
+        res += "<b>&#8226;" + str(fecha['fecha_creacion']) + "</b>\n"
 
     return res
 
@@ -45,38 +45,42 @@ def getMedidasEspecificas(body):
     except Exception as e:
         return JsonResponse({'fulfillmentText': str(e)}, safe=False)
 
-    res += "Las médidias <b>'" + str(provincia) + "</b> el <b>" + str(fecha['fecha']) + "</b>, son:\n"
+    res += "Las médidias para <b>" + str(provincia) + "</b> el <b>" + str(fecha['fecha']) + "</b>, son:\n"
 
     res += "<b>Nivel de restricción</b>: " + get_nivel(str(informacion_deseada.nivel)) + "\n"
-    res += "<b>Cierre perimetral</b>: " + "Si" if informacion_deseada.cierre_perimetral else "No" + "\n\n"
+
+    if informacion_deseada.cierre_perimetral:
+        res += "<b>Cierre perimetral</b>: Sí\n\n"
+    else:
+        res += "<b>Cierre perimetral</b>: No\n\n"
 
     if informacion_deseada.horarios_ocio_nocturno != 'N':
-        res += "<b>OCIO NOCTURNO</b>:" +"\n"
-        res += "<b>Horario de cierre</b>: " + str(informacion_deseada.horarios_ocio_nocturno) + "\n"
+        res += "<b>OCIO NOCTURNO</b>:" +"\n\n"
+        res += "<b>&#8226; Horario de cierre</b>: " + str(informacion_deseada.horarios_ocio_nocturno) + "\n"
 
         if informacion_deseada.aforo_ocio_nocturno_exterior is None:
-            res += "<b>Número de personas en terraza/exterior</b>: No se indica" + "\n"
+            res += "<b>&#8226; Número de personas en terraza/exterior</b>: No se indica" + "\n"
         else:
-            res += "<b>Número de personas en terraza/exterior</b>:" + str(informacion_deseada.aforo_ocio_nocturno_exterior) + "\n"
+            res += "<b>&#8226; Número de personas en terraza/exterior</b>:" + str(informacion_deseada.aforo_ocio_nocturno_exterior) + "\n"
 
         if informacion_deseada.aforo_ocio_nocturno_interior is None:
-            res += "<b>Número de personas en interior</b>: No se indica" + "\n"
+            res += "<b>&#8226; Número de personas en interior</b>: No se indica" + "\n"
         else:
-            res += "<b>Número de personas en terraza/exterior</b>:" + str(informacion_deseada.aforo_ocio_nocturno_interior) + "\n"
+            res += "<b>&#8226; Número de personas en terraza/exterior</b>:" + str(informacion_deseada.aforo_ocio_nocturno_interior) + "\n"
 
-    res += "\n<b>HOSTELERÍA</b>:\n"
-    res += "<b>Horario de cierre</b>: " + str(informacion_deseada.horario_hosteleria) + "\n"
+    res += "\n<b>HOSTELERÍA</b>:\n\n"
+    res += "<b>&#8226; Horario de cierre</b>: " + str(informacion_deseada.horario_hosteleria) + "\n"
 
     if informacion_deseada.aforo_hosteleria_nocturno_exterior is None:
-        res += "<b>Número de personas en terraza/exterior</b>: No se indica" + "\n"
+        res += "<b>&#8226; Número de personas en terraza/exterior</b>: No se indica" + "\n"
     else:
-        res += "<b>Número de personas en terraza/exterior</b>:" + str(
+        res += "<b>&#8226; Número de personas en terraza/exterior</b>:" + str(
             informacion_deseada.aforo_hosteleria_nocturno_exterior) + "\n"
 
     if informacion_deseada.aforo_hosteleria_nocturno_interior is None:
-        res += "<b>Número de personas en interior</b>: No se indica" + "\n"
+        res += "<b>&#8226; Número de personas en interior</b>: No se indica" + "\n"
     else:
-        res += "<b>Número de personas en terraza/exterior</b>:" + str(
+        res += "<b>&#8226; Número de personas en terraza/exterior</b>:" + str(
             informacion_deseada.aforo_hosteleria_nocturno_interior) + "\n"
 
     return res
