@@ -90,7 +90,7 @@ def getAyudaMedidas():
 
     res += "\t &#8226; Listado de fechas con medidas\n"
     res += "\t &#8226; Listado de provincias con medidas\n"
-    res += "\t &#8226; Medidias &lt;provincia&gt; &lt;fecha&gt;\n"
+    res += "\t &#8226; Medidas &lt;provincia&gt; &lt;fecha&gt;\n"
 
     return res
 
