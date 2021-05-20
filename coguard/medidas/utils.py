@@ -56,15 +56,15 @@ def getMedidasEspecificas(body):
 
     if informacion_deseada.horarios_ocio_nocturno != 'N':
         res += "<b>OCIO NOCTURNO</b>:" +"\n\n"
-        res += "<b>&#8226; Horario de cierre</b>: " + str(informacion_deseada.horarios_ocio_nocturno) + "\n"
+        res += "<b>\t&#8226; Horario de cierre</b>: " + str(informacion_deseada.horarios_ocio_nocturno) + "\n"
 
         if informacion_deseada.aforo_ocio_nocturno_exterior is None:
-            res += "<b>&#8226; Número de personas en terraza/exterior</b>: No se indica" + "\n"
+            res += "<b>\t&#8226; Número de personas en terraza/exterior</b>: No se indica" + "\n"
         else:
-            res += "<b>&#8226; Número de personas en terraza/exterior</b>:" + str(informacion_deseada.aforo_ocio_nocturno_exterior) + "\n"
+            res += "<b>\t&#8226; Número de personas en terraza/exterior</b>:" + str(informacion_deseada.aforo_ocio_nocturno_exterior) + "\n"
 
         if informacion_deseada.aforo_ocio_nocturno_interior is None:
-            res += "<b>&#8226; Número de personas en interior</b>: No se indica" + "\n"
+            res += "<b>\t&#8226; Número de personas en interior</b>: No se indica" + "\n"
         else:
             res += "<b>&#8226; Número de personas en interior</b>:" + str(informacion_deseada.aforo_ocio_nocturno_interior) + "\n"
 
@@ -72,15 +72,15 @@ def getMedidasEspecificas(body):
     res += "<b>&#8226; Horario de cierre</b>: " + str(informacion_deseada.horario_hosteleria) + "\n"
 
     if informacion_deseada.aforo_hosteleria_nocturno_exterior is None:
-        res += "<b>&#8226; Número de personas en terraza/exterior</b>: No se indica" + "\n"
+        res += "<b>\t&#8226; Número de personas en terraza/exterior</b>: No se indica" + "\n"
     else:
-        res += "<b>&#8226; Número de personas en terraza/exterior</b>:" + str(
+        res += "<b>\t&#8226; Número de personas en terraza/exterior</b>:" + str(
             informacion_deseada.aforo_hosteleria_nocturno_exterior) + "\n"
 
     if informacion_deseada.aforo_hosteleria_nocturno_interior is None:
-        res += "<b>&#8226; Número de personas en interior</b>: No se indica" + "\n"
+        res += "<b>\t&#8226; Número de personas en interior</b>: No se indica" + "\n"
     else:
-        res += "<b>&#8226; Número de personas eninterior</b>:" + str(
+        res += "<b>\t&#8226; Número de personas eninterior</b>:" + str(
             informacion_deseada.aforo_hosteleria_nocturno_interior) + "\n"
 
     return res
