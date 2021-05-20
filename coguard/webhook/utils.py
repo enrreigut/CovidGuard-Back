@@ -42,5 +42,3 @@ def getAyudaTodo():
     res += "\t &#8226; Vacuna asignada"
     
     return res
-    
-        

@@ -85,6 +85,15 @@ def getMedidasEspecificas(body):
 
     return res
 
+def getAyudaMedidas():
+    res = "La información disponible de <b>Medidias</b> es:\n"
+
+    res += "\t &#8226; Listado de fechas con medidas\n"
+    res += "\t &#8226; Listado de provincias con medidas\n"
+    res += "\t &#8226; Medidias &lt;provincia&gt; &lt;fecha&gt;\n"
+
+    return res
+
 
 # Utilidades
 

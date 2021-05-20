@@ -55,7 +55,7 @@ class WebhookEstadisticasTipo1API(APIView):
         elif action == acciones['AYUDA VACUNACION']:
             res = prettyPrint(getAyudaVacunacion())
         elif action == acciones['AYUDA MEDIDAS']:
-            res = prettyPrint(getAyudaVacunacion())
+            res = prettyPrint(getAyudaMedidas())
             
         # Estadisticas
         
