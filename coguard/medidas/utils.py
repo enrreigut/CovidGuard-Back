@@ -45,7 +45,7 @@ def getMedidasEspecificas(body):
     except Exception as e:
         return JsonResponse({'fulfillmentText': str(e)}, safe=False)
 
-    res += "Las médidias para <b>" + str(provincia) + "</b> el <b>" + str(fecha['fecha']) + "</b>, son:\n"
+    res += "Las medidas para <b>" + str(provincia) + "</b> el <b>" + str(fecha['fecha']) + "</b>, son:\n"
 
     res += "<b>Nivel de restricción</b>: " + get_nivel(str(informacion_deseada.nivel)) + "\n"
 
@@ -66,7 +66,7 @@ def getMedidasEspecificas(body):
         if informacion_deseada.aforo_ocio_nocturno_interior is None:
             res += "<b>&#8226; Número de personas en interior</b>: No se indica" + "\n"
         else:
-            res += "<b>&#8226; Número de personas en terraza/exterior</b>:" + str(informacion_deseada.aforo_ocio_nocturno_interior) + "\n"
+            res += "<b>&#8226; Número de personas en interior</b>:" + str(informacion_deseada.aforo_ocio_nocturno_interior) + "\n"
 
     res += "\n<b>HOSTELERÍA</b>:\n\n"
     res += "<b>&#8226; Horario de cierre</b>: " + str(informacion_deseada.horario_hosteleria) + "\n"
@@ -80,7 +80,7 @@ def getMedidasEspecificas(body):
     if informacion_deseada.aforo_hosteleria_nocturno_interior is None:
         res += "<b>&#8226; Número de personas en interior</b>: No se indica" + "\n"
     else:
-        res += "<b>&#8226; Número de personas en terraza/exterior</b>:" + str(
+        res += "<b>&#8226; Número de personas eninterior</b>:" + str(
             informacion_deseada.aforo_hosteleria_nocturno_interior) + "\n"
 
     return res
