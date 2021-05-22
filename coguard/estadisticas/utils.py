@@ -68,7 +68,8 @@ def getFechasEstadisticas():
 
     res = "Las fechas con estadísticas son: \n"
     for fecha in fechas:
-        res += "&#8226; <b>" + str(fecha['fecha_creacion']) + "</b>\n"
+        fecha = fecha['fecha_creacion'].strftime("%d-%m-%Y")
+        res += "&#8226; <b>" + fecha + "</b>\n"
 
     return res
 
@@ -107,6 +108,7 @@ def get_fecha(body):
     texto_adicional = None
 
     try:
+        print(body['queryResult']['parameters']['date'])
         fecha_body = datetime.datetime.strptime(body['queryResult']['parameters']['date'], "%Y-%m-%dT%H:%M:%S%z").date()
 
         fecha = fecha_body if len(EstadisticasTipo1.objects.filter(fecha_creacion=fecha_body)) > 0 else None

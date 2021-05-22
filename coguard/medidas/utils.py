@@ -8,7 +8,8 @@ def getMedidasFechas():
 
     res = "Las fechas con medidas registradas son: \n"
     for fecha in fechas:
-        res += "<b>&#8226; " + str(fecha['fecha_creacion']) + "</b>\n"
+        fecha = fecha['fecha_creacion'].strftime("%d-%m-%Y")
+        res += "<b>&#8226; " + fecha + "</b>\n"
 
     return res
 
