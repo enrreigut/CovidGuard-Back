@@ -1,2 +1,2 @@
-# CovidGuard-Back
-CBD
+# Covid Guardian - Backend
+
