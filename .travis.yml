@@ -10,7 +10,7 @@ script:
   - cd coguard
   - cp travis_settings.py settings.py
   - cd ..
-  - python ./manage.py makemigrations
+  - python ./manage.py makemigrations --noinput
   - python ./manage.py migrate
 deploy:
   - provider: heroku
