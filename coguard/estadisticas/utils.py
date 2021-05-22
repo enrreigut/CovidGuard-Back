@@ -68,7 +68,6 @@ def getFechasEstadisticas():
 
     res = "Las fechas con estadísticas son: \n"
     for fecha in fechas:
-        
         fecha = fecha['fecha_creacion'].strftime("%d-%m-%Y")
         res += "&#8226; <b>" + fecha + "</b>\n"
 
