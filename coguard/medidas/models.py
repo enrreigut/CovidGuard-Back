@@ -2,7 +2,7 @@ from django.db import models
 
 class Medidas(models.Model):
 
-    provincia = models.CharField(blank=True, null=True, max_length=150)
+    municipio = models.CharField(blank=True, null=True, max_length=150)
 
     fecha_creacion = models.DateField(blank=True, null=True)
 
@@ -33,4 +33,4 @@ class Medidas(models.Model):
     aforo_hosteleria_nocturno_interior = models.CharField(blank=True, null=True, max_length=5)
 
     def __str__(self):
-        return self.provincia + "(" + str(self.fecha_creacion) + ")"
+        return self.municipio + "(" + str(self.fecha_creacion) + ")"

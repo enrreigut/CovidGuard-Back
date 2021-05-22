@@ -28,8 +28,8 @@ def getAyudaTodo():
     res = "La información disponible es:\n\n"
     
     res += "<b>Estadísticas:</b>\n"
-    res += "\t &#8226; Listado de provincias\n"
-    res += "\t &#8226; Listado de fechas\n"
+    res += "\t &#8226; Listado de lugares de residencia\n"
+    res += "\t &#8226; Listado de fechas con estadísticas\n"
     res += "\t &#8226; Tipos de estadísticas\n"
     res += "\t &#8226; Listado de estadísticas generales &lt;provincia&gt; &lt;fecha&gt;\n"
     res += "\t &#8226; Estadísticas &lt;tipo de estadística&gt; &lt;provincia&gt; &lt;fecha&gt;\n"
@@ -42,7 +42,7 @@ def getAyudaTodo():
     res += "\t &#8226; Vacuna asignada\n"
     res += "\n<b>Medidas:</b>\n"
     res += "\t &#8226; Listado de fechas con medidas\n"
-    res += "\t &#8226; Listado de provincias con medidas\n"
-    res += "\t &#8226; Medidias &lt;provincia&gt; &lt;fecha&gt;\n"
+    res += "\t &#8226; Listado de municipios con medidas registradas\n"
+    res += "\t &#8226; Medidas &lt;municipio&gt; &lt;fecha&gt;\n"
     
     return res

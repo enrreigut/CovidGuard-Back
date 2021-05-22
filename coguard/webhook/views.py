@@ -23,7 +23,7 @@ acciones = {
     'LISTADO VACUNAS': 'getListadoVacunas',
     'VACUNA POR EDAD': 'getVacunaPorEdad',
     'MEDIDAS FECHAS': 'getMedidasFechas',
-    'MEDIDAS PROVINCIAS': 'getMedidasProvincias',
+    'MEDIDAS MUNICIPIOS': 'getMedidasMunicipios',
     'MEDIDAS ESPECIFICAS': 'getMedidasEspecificas',
 }
 
@@ -87,8 +87,8 @@ class WebhookEstadisticasTipo1API(APIView):
 
         elif action == acciones['MEDIDAS FECHAS']:
             res = prettyPrint(getMedidasFechas())
-        elif action == acciones['MEDIDAS PROVINCIAS']:
-            res = prettyPrint(getMedidasProvincias())
+        elif action == acciones['MEDIDAS MUNICIPIOS']:
+            res = prettyPrint(getMedidasMunicipios())
         elif action == acciones['MEDIDAS ESPECIFICAS']:
             res = prettyPrint(getMedidasEspecificas(body))
 

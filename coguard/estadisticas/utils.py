@@ -10,8 +10,7 @@ def getEstadisticasGenerales(body):
     try:
         lugar_de_residencia = body['queryResult']['parameters']['LugarDeResidencia']
     except Exception as e:
-        return JsonResponse({'fulfillmentText': "Error al obtener el lugar de residencia + (" + str(e) + ")"},
-                            safe=False)
+        return "Se ha producido un error inesperado. Lo sentimos."
 
     # Coger fecha
 
@@ -19,12 +18,11 @@ def getEstadisticasGenerales(body):
 
     if fecha['texto']:
         res += fecha['texto']
-
+        
     try:
-        informacion_deseada = EstadisticasTipo1.objects.get(fecha_creacion=fecha['fecha'],
-                                                            lugar_de_residencia=str(lugar_de_residencia).lower())
+        informacion_deseada = EstadisticasTipo1.objects.get(fecha_creacion=fecha['fecha'],lugar_de_residencia=lugar_de_residencia.lower())
     except Exception as e:
-        return JsonResponse({'fulfillmentText': str(e)}, safe=False)
+        return "Se ha producido un error inesperado. Lo sentimos."
 
     res += "Las estadisticas para el lugar de residencia: <b>" + str(lugar_de_residencia) + "</b>, son: \n"
     res += informacion_deseada.parse()
@@ -39,14 +37,12 @@ def getEstadisticasEspecificas(body):
     try:
         lugar_de_residencia = body['queryResult']['parameters']['LugarDeResidencia']
     except Exception as e:
-        return JsonResponse({'fulfillmentText': "Error al obtener el lugar de residencia + (" + str(e) + ")"},
-                            safe=False)
+        return "Se ha producido un error inesperado. Lo sentimos."
 
     try:
         columna = body['queryResult']['parameters']['EstadisticasTipo1']
     except Exception as e:
-        return JsonResponse({'fulfillmentText': "Error al obtener el lugar de residencia + (" + str(e) + ")"},
-                            safe=False)
+        return "Se ha producido un error inesperado. Lo sentimos."
 
     # Coger fecha
 
@@ -59,7 +55,7 @@ def getEstadisticasEspecificas(body):
         informacion_deseada = getattr(EstadisticasTipo1.objects.get(fecha_creacion=fecha['fecha'],
                                                                     lugar_de_residencia=str(lugar_de_residencia).lower()), columna)
     except Exception as e:
-        return JsonResponse({'fulfillmentText': str(e)}, safe=False)
+        return "Se ha producido un error inesperado. Lo sentimos."
 
     res += "El atributo <b>'" + columna + "'</b> para <b>" + str(lugar_de_residencia) + "</b> el <b>" + str(fecha['fecha']) + "</b>, es de <b>" + str(informacion_deseada) + "</b>\n"
 
@@ -80,8 +76,8 @@ def getFechasEstadisticas():
 def getAyudaEstadisticas():
     res = "La información disponible de <b>Estadísticas</b> es:\n"
 
-    res += "\t &#8226; Listado de provincias\n"
-    res += "\t &#8226; Listado de fechas\n"
+    res += "\t &#8226; Listado de lugares de residencia\n"
+    res += "\t &#8226; Listado de fechas con estadísticas\n"
     res += "\t &#8226; Tipos de estadísticas\n"
     res += "\t &#8226; Listado de estadísticas generales &lt;provincia&gt; &lt;fecha&gt;\n"
     res += "\t &#8226; Estadísticas &lt;tipo de estadística&gt; &lt;provincia&gt; &lt;fecha&gt;\n"
@@ -112,8 +108,6 @@ def get_fecha(body):
 
     try:
         fecha_body = datetime.datetime.strptime(body['queryResult']['parameters']['date'], "%Y-%m-%dT%H:%M:%S%z").date()
-
-        print(fecha_body)
 
         fecha = fecha_body if len(EstadisticasTipo1.objects.filter(fecha_creacion=fecha_body)) > 0 else None
 

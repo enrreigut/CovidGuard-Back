@@ -6,19 +6,19 @@ from django.http import JsonResponse
 def getMedidasFechas():
     fechas = Medidas.objects.values('fecha_creacion').distinct()
 
-    res = "Las fechas con medidas son: \n"
+    res = "Las fechas con medidas registradas son: \n"
     for fecha in fechas:
-        res += "<b>&#8226;" + str(fecha['fecha_creacion']) + "</b>\n"
+        res += "<b>&#8226; " + str(fecha['fecha_creacion']) + "</b>\n"
 
     return res
 
 
-def getMedidasProvincias():
-    provincias = Medidas.objects.values('provincia').distinct()
+def getMedidasMunicipios():
+    municipios = Medidas.objects.values('municipio').distinct()
 
-    res = "Las medidas con provincias son: \n"
-    for provincia in provincias:
-        res += "> <b>" + str(provincia['provincia']) + "</b>\n"
+    res = "Los municipios con medidas registradas son: \n"
+    for municipio in municipios:
+        res += "<b>&#8226; " + str(municipio['municipio']) + "</b>\n"
 
     return res
 
@@ -27,10 +27,9 @@ def getMedidasEspecificas(body):
     res = ""
 
     try:
-        provincia = body['queryResult']['parameters']['LugarDeResidencia']
+        municipio = body['queryResult']['parameters']['Municipio']
     except Exception as e:
-        return JsonResponse({'fulfillmentText': "Error al obtener el lugar de residencia + (" + str(e) + ")"},
-                            safe=False)
+        return "Se ha producido un error inesperado. Lo sentimos."
 
     # Coger fecha
 
@@ -40,12 +39,12 @@ def getMedidasEspecificas(body):
         res += fecha['texto']
 
     try:
-        informacion_deseada = Medidas.objects.get(provincia=provincia)
+        informacion_deseada = Medidas.objects.get(municipio=municipio)
 
     except Exception as e:
         return JsonResponse({'fulfillmentText': str(e)}, safe=False)
 
-    res += "Las medidas para <b>" + str(provincia) + "</b> el <b>" + str(fecha['fecha']) + "</b>, son:\n"
+    res += "Las medidas para <b>" + str(municipio) + "</b> el <b>" + str(fecha['fecha']) + "</b>, son:\n"
 
     res += "<b>Nivel de restricción</b>: " + get_nivel(str(informacion_deseada.nivel)) + "\n"
 
@@ -61,26 +60,26 @@ def getMedidasEspecificas(body):
         if informacion_deseada.aforo_ocio_nocturno_exterior is None:
             res += "<b>\t&#8226; Número de personas en terraza/exterior</b>: No se indica" + "\n"
         else:
-            res += "<b>\t&#8226; Número de personas en terraza/exterior</b>:" + str(informacion_deseada.aforo_ocio_nocturno_exterior) + "\n"
+            res += "<b>\t&#8226; Número de personas en terraza/exterior</b>: " + str(informacion_deseada.aforo_ocio_nocturno_exterior) + "\n"
 
         if informacion_deseada.aforo_ocio_nocturno_interior is None:
             res += "<b>\t&#8226; Número de personas en interior</b>: No se indica" + "\n"
         else:
-            res += "<b>&#8226; Número de personas en interior</b>:" + str(informacion_deseada.aforo_ocio_nocturno_interior) + "\n"
+            res += "<b>\t&#8226; Número de personas en interior</b>: " + str(informacion_deseada.aforo_ocio_nocturno_interior) + "\n"
 
     res += "\n<b>HOSTELERÍA</b>:\n\n"
-    res += "<b>&#8226; Horario de cierre</b>: " + str(informacion_deseada.horario_hosteleria) + "\n"
+    res += "<b>\t&#8226; Horario de cierre</b>: " + str(informacion_deseada.horario_hosteleria) + "\n"
 
     if informacion_deseada.aforo_hosteleria_nocturno_exterior is None:
         res += "<b>\t&#8226; Número de personas en terraza/exterior</b>: No se indica" + "\n"
     else:
-        res += "<b>\t&#8226; Número de personas en terraza/exterior</b>:" + str(
+        res += "<b>\t&#8226; Número de personas en terraza/exterior</b>: " + str(
             informacion_deseada.aforo_hosteleria_nocturno_exterior) + "\n"
 
     if informacion_deseada.aforo_hosteleria_nocturno_interior is None:
         res += "<b>\t&#8226; Número de personas en interior</b>: No se indica" + "\n"
     else:
-        res += "<b>\t&#8226; Número de personas eninterior</b>:" + str(
+        res += "<b>\t&#8226; Número de personas en interior</b>: " + str(
             informacion_deseada.aforo_hosteleria_nocturno_interior) + "\n"
 
     return res
@@ -89,8 +88,8 @@ def getAyudaMedidas():
     res = "La información disponible de <b>Medidas</b> es:\n"
 
     res += "\t &#8226; Listado de fechas con medidas\n"
-    res += "\t &#8226; Listado de provincias con medidas\n"
-    res += "\t &#8226; Medidas &lt;provincia&gt; &lt;fecha&gt;\n"
+    res += "\t &#8226; Listado de municipios con medidas registradas\n"
+    res += "\t &#8226; Medidas &lt;municipio&gt; &lt;fecha&gt;\n"
 
     return res
 
@@ -107,8 +106,6 @@ def get_fecha(body):
 
     try:
         fecha_body = datetime.datetime.strptime(body['queryResult']['parameters']['date'], "%Y-%m-%dT%H:%M:%S%z").date()
-
-        print(fecha_body)
 
         fecha = fecha_body if len(Medidas.objects.filter(fecha_creacion=fecha_body)) > 0 else None
 
