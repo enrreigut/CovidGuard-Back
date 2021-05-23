@@ -3,7 +3,7 @@
     "model": "medidas.medidas",
     "pk": 1,
     "fields": {
-      "provincia": "Sevilla",
+      "municipio": "Sevilla",
       "fecha_creacion": "2021-05-13",
       "nivel": "3",
       "cierre_perimetral": false,
@@ -19,7 +19,7 @@
     "model": "medidas.medidas",
     "pk": 2,
     "fields": {
-      "provincia": "C�rdoba",
+      "municipio": "Córdoba",
       "fecha_creacion": "2021-05-13",
       "nivel": "2",
       "cierre_perimetral": false,
@@ -35,7 +35,7 @@
     "model": "medidas.medidas",
     "pk": 3,
     "fields": {
-      "provincia": "Granada",
+      "municipio": "Granada",
       "fecha_creacion": "2021-05-13",
       "nivel": "4",
       "cierre_perimetral": false,
@@ -51,7 +51,7 @@
     "model": "medidas.medidas",
     "pk": 4,
     "fields": {
-      "provincia": "C�diz",
+      "municipio": "Cádiz",
       "fecha_creacion": "2021-05-13",
       "nivel": "2",
       "cierre_perimetral": false,
@@ -67,7 +67,7 @@
     "model": "medidas.medidas",
     "pk": 5,
     "fields": {
-      "provincia": "Almer�a",
+      "municipio": "Almería",
       "fecha_creacion": "2021-05-13",
       "nivel": "2",
       "cierre_perimetral": false,
@@ -83,7 +83,7 @@
     "model": "medidas.medidas",
     "pk": 6,
     "fields": {
-      "provincia": "Huelva",
+      "municipio": "Huelva",
       "fecha_creacion": "2021-05-13",
       "nivel": "2",
       "cierre_perimetral": false,
@@ -99,7 +99,7 @@
     "model": "medidas.medidas",
     "pk": 7,
     "fields": {
-      "provincia": "Ja�n",
+      "municipio": "Jaén",
       "fecha_creacion": "2021-05-13",
       "nivel": "3",
       "cierre_perimetral": false,
@@ -115,7 +115,7 @@
     "model": "medidas.medidas",
     "pk": 8,
     "fields": {
-      "provincia": "M�laga",
+      "municipio": "Málaga",
       "fecha_creacion": "2021-05-13",
       "nivel": "2",
       "cierre_perimetral": false,
