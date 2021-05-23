@@ -1,9 +1,4 @@
-from bs4 import BeautifulSoup
-import urllib.request
-from urllib.error import HTTPError
-from django.db import IntegrityError
 from .models import *
-from datetime import datetime
 from django.utils import timezone
 import requests
 
@@ -17,7 +12,6 @@ def update_estadistica_tipo_uno(estadistica_actual, nueva_estadistica):
 
 
 def get_response(url):
-    url = "https://www.juntadeandalucia.es/institutodeestadisticaycartografia/intranet/admin/rest/v1.0/consulta/44088"
     res = requests.get(url)
 
     if res.status_code != 200:
@@ -38,7 +32,7 @@ def create_estadisticas_tipo_uno():
     for provincia in estadisticas['data']:
         estadisticas_provincia = EstadisticasTipo1(
             fecha_creacion=timezone.now().date(),
-            lugar_de_residencia=provincia[0]['des'],
+            lugar_de_residencia=str(provincia[0]['des']).lower(),
             total_confirmados=int(float(provincia[1]['val'])),
             tasa_total_confirmados=float(provincia[2]['val']),
             confirmados_PDIA=int(float(provincia[3]['val'])),
